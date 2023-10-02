@@ -1,21 +1,28 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { send } from 'emailjs-com';
+
+interface ContactData {
+    firma: string;
+    email: string;
+    jobtitel: string;
+    nachricht: string;
+}
 
 function Contact() {
 
-    const [data, setData] = useState({
+    const [data, setData] = useState<ContactData>({
         firma: "",
         email: "",
         jobtitel: "",
         nachricht: "",
     })
 
-    const handleChange = ({ currentTarget: input }) => {
-        setData({ ...data, [input.name]: input.value });
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setData({ ...data, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log(data);
         send(
@@ -30,7 +37,7 @@ function Contact() {
             .catch((err) => {
                 console.log('FAILED...', err);
             });
-        e.target.reset();
+        e.currentTarget.reset();
     };
 
     return (
@@ -81,7 +88,6 @@ function Contact() {
                         Ihre Nachricht an mich<span className='Stern'>*</span>
                         <textarea
                             required
-                            type="text"
                             placeholder='Nachricht'
                             name="nachricht"
                             onChange={handleChange}
@@ -95,4 +101,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

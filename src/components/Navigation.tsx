@@ -8,7 +8,7 @@ import Logo from '@/images/Logo.png';
 
 function Navigation() {
 
-    const [aktiv, setAktiv] = useState(false)
+    const [aktiv, setAktiv] = useState<boolean>(false)
 
     const toggle = () => {
         setAktiv(!aktiv);

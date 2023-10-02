@@ -1,10 +1,23 @@
 import React from "react";
-import Link from "next/link.js";
-
+import Link from "next/link";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiOutlineGlobal } from "@react-icons/all-files/ai/AiOutlineGlobal";
 
-function ProjectCard({ titel, text, github, website, image }) {
+interface ProjectCardProps {
+  titel: string;
+  text: string;
+  github: string;
+  website: string;
+  image: string;
+}
+
+function ProjectCard({
+  titel,
+  text,
+  github,
+  website,
+  image,
+}: ProjectCardProps) {
   return (
     <div className="Project-Card">
       <div className="Project-Pic">

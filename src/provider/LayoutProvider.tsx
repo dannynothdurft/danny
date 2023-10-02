@@ -1,17 +1,14 @@
-"use client";
-import React from "react";
+"use client"
+import React, { ReactNode } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-function LayoutProvider({ children }: { children: React.ReactNode }) {
-
+function LayoutProvider({ children }: { children: ReactNode }) {
   return (
     <>
-      
-          <Navigation />
-          <div className="main--container">{children}</div>
-          <Footer />
-     
+      <Navigation />
+      <div className="main--container">{children}</div>
+      <Footer />
     </>
   );
 }
