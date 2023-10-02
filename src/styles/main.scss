@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #130f49;
+}
+
+// Desktop-first
+.Navigation-Componente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 20px 45px;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 5px;
+
+        li {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 12px 22px;
+
+            a {
+                text-decoration: none;
+                letter-spacing: -0.02em;
+            }
+
+            :hover {
+                color: #2981a5;
+            }
+        }
+    }
+
+    .DN-Logo {
+        width: 50px;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+}
+
+.Home-Componente {
+    min-height: calc(100vh - 41px);
+    padding-top: 41px;
+    min-width: 100vw;
+    font-family: "Karla", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    overflow-x: visible;
+
+    .Circle-Background {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .Text-Container {
+        width: 400px;
+        height: 632px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 60px;
+            margin-bottom: 20px;
+            letter-spacing: -0.1em;
+        }
+
+        p {
+            font-size: 18px;
+
+            a {
+                text-decoration: none;
+                color: #2981a5;
+            }
+        }
+
+        .Highlight {
+            color: #2981a5;
+        }
+
+        .Abstand {
+            height: 20px;
+        }
+
+        .WhatsApp-Button {
+            margin: 50px 100px;
+        }
+    }
+
+    .Image-Container {
+        width: 632px;
+        height: 632px;
+        background-color: #c2e2ff;
+        border-radius: 50% 0% 50% 50%;
+        position: relative;
+
+        .Dots-Image {
+            position: absolute;
+            top: 5%;
+            left: 3%;
+            z-index: 50;
+        }
+
+        .Avatar-Image {
+            width: 632px;
+            height: 632px;
+            border-radius: 50%;
+            z-index: 40;
+        }
+    }
+
+
+}
+
+.AboutMe-Pages {
+    min-height: calc(100vh - 41px);
+    min-width: 100vw;
+    padding: 70px;
+    background-color: #e9f9ff;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        max-width: 800px;
+        margin-top: 20px;
+    }
+
+    p,
+    ul {
+        max-width: 800px;
+        margin-top: 10px;
+
+        li {
+            margin-top: 5px;
+        }
+    }
+}
+
+.Projects-Pages {
+    min-height: calc(100vh - 41px);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #e9f9ff;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        list-style: none;
+    }
+
+    .Project-Card {
+        font-family: "Karla", sans-serif;
+        background-color: #fff;
+        width: 900px;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+
+        .Project-Pic {
+            width: 300px;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .Project-Info {
+            width: 600px;
+            margin-left: 15px;
+            position: relative;
+
+            h2 {
+                font-family: 'Space Grotesk', sans-serif;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+
+            .Project-Icon-Container {
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+
+                .Project-Icon {
+                    height: 30px;
+                    width: 30px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+.Contact-Pages {
+    min-height: calc(100vh - 41px);
+    padding-top: 41px;
+    min-width: 100vw;
+    font-family: "Karla", sans-serif;
+    background-color: #e9f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    overflow-x: visible;
+
+    .Text-Container {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: -0.04em;
+
+        h2 {
+            font-size: 3rem;
+            margin-top: 15px;
+        }
+    }
+
+    .Contact-Formular {
+        background-color: #ffffff;
+        width: 577px;
+        height: 680px;
+        border-radius: 25px;
+        letter-spacing: -0.04em;
+        font-size: 18px;
+        padding: 80px 40px;
+
+        label {
+            display: block;
+            color: #b4b2c5;
+            margin-top: 25px;
+
+            .Stern {
+                color: #60d1ff;
+                margin-left: 2px;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                font-size: 18px;
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid #b4b2c5;
+                color: #999999;
+            }
+
+            textarea {
+                display: block;
+                font-size: 18px;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #b4b2c5;
+                color: #999999;
+                padding: 15px;
+            }
+        }
+
+        .Form-Button {
+            border: 0;
+            background-color: #130f49;
+            color: #fff;
+            padding: 20px 32px;
+            border-radius: 12px;
+            font-size: 18px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.Impressum-Pages {
+    min-height: calc(100vh - 41px);
+    min-width: 100vw;
+    padding-top: 41px;
+    background-color: #e9f9ff;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        margin-top: 20px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+}
+
+.DSGVO-Pages {
+    min-height: calc(100vh - 41px);
+    min-width: 100vw;
+    padding: 70px;
+    background-color: #e9f9ff;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        max-width: 800px;
+        margin-top: 20px;
+    }
+
+    p,
+    ul {
+        max-width: 800px;
+        margin-top: 10px;
+
+        li {
+            margin-top: 5px;
+        }
+    }
+}
+
+.Footer-Componente {
+    margin-left: 30px;
+    margin-right: 80px;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 5px;
+
+        li {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 12px 22px;
+
+            a {
+                text-decoration: none;
+                letter-spacing: -0.02em;
+            }
+
+            :hover {
+                color: #2981a5;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 1250px) {
+
+    .Home-Componente {
+        padding: 100px;
+        padding-top: 150px;
+        flex-direction: column;
+
+        .Text-Container {
+            height: 400px;
+
+            .Abstand {
+                padding: 9px;
+            }
+        }
+
+        .Image-Container {
+            width: 550px;
+            height: 550px;
+
+            .Avatar-Image {
+                width: 550px;
+                height: 550px;
+            }
+        }
+
+
+    }
+
+    .Contact-Pages {
+        padding: 80px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    .Home-Componente {
+
+        .Circle-Background {
+            transform: scale(0.8);
+            top: -36px;
+            right: -31px;
+        }
+
+        .Text-Container {
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+
+            .WhatsApp-Button {
+                margin: 40px 100px;
+            }
+        }
+
+        .Image-Container {
+            width: 500px;
+            height: 500px;
+
+            .Avatar-Image {
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+
+    }
+
+    .Projects-Pages {
+        padding-top: 130px;
+
+        .Project-Card {
+            width: 90%;
+            margin: 0 auto;
+
+            .Project-Info {
+                width: 70%;
+
+
+                h2 {
+                    font-family: 'Space Grotesk', sans-serif;
+                }
+
+                p {
+                    margin-top: 10px;
+                }
+
+                .Project-Icon-Container {
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+
+                    .Project-Icon {
+                        height: 25px;
+                        width: 25px;
+                        margin: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Contact-Pages {
+        padding: 100px;
+
+        .Text-Container {
+            font-size: 26px;
+
+            h2 {
+                font-size: 2.6rem;
+                margin-top: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .Home-Componente {
+
+        .Image-Container {
+            width: 450px;
+            height: 450px;
+
+            .Dots-Image {
+                width: 130px;
+                top: 1%;
+                left: 1%;
+            }
+
+            .Avatar-Image {
+                width: 450px;
+                height: 450px;
+            }
+        }
+
+
+    }
+
+    .Projects-Pages {
+
+        .Project-Card {
+            display: flex;
+            flex-direction: column;
+
+            .Project-Pic {
+                margin: 0 auto;
+            }
+
+            .Project-Info {
+                margin: 0;
+                margin-top: 15px;
+                width: 100%;
+                position: relative;
+
+                .Project-Icon-Container {
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+
+                    .Project-Icon {
+                        height: 30px;
+                        width: 30px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    .Contact-Pages {
+        gap: 50px;
+        padding-bottom: 50px;
+
+        .Text-Container {
+            font-size: 22px;
+            letter-spacing: -0.04em;
+
+            h2 {
+                font-size: 2.0rem;
+                margin-top: 10px;
+            }
+        }
+
+        .Contact-Formular {
+            background-color: #ffffff;
+            width: 500px;
+            height: 600px;
+            border-radius: 22px;
+            letter-spacing: -0.04em;
+            font-size: 17px;
+            padding: 40px 30px;
+
+            label {
+
+                input {
+                    display: block;
+                    width: 100%;
+                    font-size: 17px;
+                    padding: 14px;
+                }
+
+                textarea {
+                    font-size: 17px;
+                    padding: 14px;
+                }
+            }
+
+            .Form-Button {
+                padding: 18px 30px;
+                border-radius: 11px;
+                font-size: 17px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    .Home-Componente {
+
+        .Circle-Background {
+            transform: scale(0.6);
+            top: -72px;
+            right: -61px;
+        }
+
+        .Text-Container {
+
+            h1 {
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
+
+            .WhatsApp-Button {
+                margin: 30px 50px;
+            }
+        }
+
+        .Image-Container {
+            width: 400px;
+            height: 400px;
+
+            .Dots-Image {
+                width: 110px;
+
+            }
+
+            .Avatar-Image {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Navigation-Componente {
+
+        ul {
+            display: none;
+        }
+
+        .aktive {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: #ffff;
+            border: 1px solid #000;
+            border-radius: 8px;
+        }
+
+        .DN-Logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .toggle {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -25px;
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+        }
+
+    }
+
+    .Contact-Pages {
+        gap: 30px;
+        padding-bottom: 30px;
+
+        .Text-Container {
+            font-size: 16px;
+            letter-spacing: -0.06em;
+
+            h2 {
+                font-size: 1.5rem;
+                margin-top: 10px;
+            }
+        }
+
+        .Contact-Formular {
+            width: 400px;
+            height: 470px;
+            border-radius: 18px;
+            letter-spacing: -0.06em;
+            font-size: 14px;
+            padding: 20px 15px;
+
+            label {
+
+                input {
+                    display: block;
+                    width: 100%;
+                    font-size: 14px;
+                    padding: 10px;
+                }
+
+                textarea {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            }
+
+            .Form-Button {
+                padding: 10px 20px;
+                border-radius: 8px;
+                font-size: 15px;
+            }
+
+        }
+    }
+
+    .Impressum-Pages {
+        padding-top: 10px;
+        font-size: 0.8rem;
+
+        h1,
+        h2 {
+            margin-top: 12px;
+        }
+    }
+
+    .DSGVO-Pages {
+        padding: 50px 20px 30px;
+        font-size: 0.8rem;
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .Footer-Componente {
+        margin: 10px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Navigation-Componente {
+        margin: 0;
+
+        .aktive {
+            right: 10px;
+            top: 10px;
+        }
+
+        .DN-Logo {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 35px;
+        }
+
+        .toggle {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+        }
+
+    }
+
+    .Home-Componente {
+        gap: 20px;
+
+        .Circle-Background {
+            transform: scale(0.4);
+            top: -110px;
+            right: -91px;
+        }
+
+        .Text-Container {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+
+            .WhatsApp-Button {
+                width: 100px;
+                margin: 30px;
+            }
+        }
+
+        .Image-Container {
+            width: 250px;
+            height: 250px;
+
+            .Dots-Image {
+                width: 70px;
+
+            }
+
+            .Avatar-Image {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    .Projects-Pages {
+        padding-top: 80px;
+
+        .Project-Card {
+
+            .Project-Pic {
+                width: 225px;
+                height: 170px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .Project-Info {
+                h2 {
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+
+    .Contact-Pages {
+        gap: 30px;
+        padding: 80px 10px 30px;
+
+        .Text-Container {
+            font-size: 14px;
+            letter-spacing: -0.06em;
+
+            h2 {
+                font-size: 1.2rem;
+                margin-top: 8px;
+            }
+        }
+
+        .Contact-Formular {
+            width: 280px;
+            height: 420px;
+            border-radius: 12px;
+            font-size: 12px;
+            padding: 15px;
+
+            label {
+                input {
+                    font-size: 12px;
+                    padding: 8px;
+                }
+
+                textarea {
+                    font-size: 12px;
+                    padding: 8px;
+                }
+            }
+
+            .Form-Button {
+                padding: 10px 15px;
+                border-radius: 8px;
+                font-size: 13px;
+            }
+
+        }
+    }
+
+    .Footer-Componente {
+        padding: 10px;
+        margin: 0;
+        font-size: 10px;
+
+        ul {
+            gap: 10px;
+
+            li {
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+    }
+}
