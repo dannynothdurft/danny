@@ -24,11 +24,18 @@ function Contact() {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(data);
+
+        const formData: Record<string, unknown> = {
+            firma: data.firma,
+            email: data.email,
+            jobtitel: data.jobtitel,
+            nachricht: data.nachricht,
+        };
+        
         send(
             'service_4lw4uc9',
             'template_0mwqzvx',
-            data,
+            formData,
             'SKT10FihoXG7TQydd'
         )
             .then((response) => {
