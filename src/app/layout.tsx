@@ -5,8 +5,16 @@ import LayoutProvider from '@/provider/LayoutProvider';
 
 
 export const metadata: Metadata = {
-  title: 'Danny Nothdurft',
-  description: 'Danny´s Webseite',
+  title: 'Danny Nothdurft - Fullstack Entwickler',
+  description: 'Danny Nothdurft der Fullstack Entwickler für Ihren Online-Erfolg! Mit umfassender Erfahrung in Frontend, Backend und SEO gestalte ich Ihre digitale Lösungen.',
+  robots: "index,follow",
+  viewport: "width=device-width, initial-scale=1.0",
+  authors: [{ name: "Danny Nothdurft" }],
+  creator: "Danny Nothdurft",
+  publisher: "Danny Nothdurft",
+  generator: "Danny Nothdurft",
+  applicationName: "Danny Nothdurft",
+  keywords: ["Fullstack Entwickler, Webentwicklung, Frontend-Entwicklung, Backend-Entwicklung, SEO-Optimierung, Digitale Lösungen, Online-Erfolg, Maßgeschneiderte Webentwicklung, Danny Nothdurft, Programmierung, Webdesign, IT-Experte, Website-Optimierung, Online-Präsenz, Webentwicklungsspezialist"],
 }
 
 export default function RootLayout({
@@ -18,7 +26,6 @@ export default function RootLayout({
     <html lang="de">
       <head>
         {/* <meta name="seobility" content="3288afe233a7dbeda71a9eec8ebc686b"></meta> */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* <link
           rel="apple-touch-icon"
           sizes="57x57"
