@@ -441,7 +441,8 @@
             }
 
             .WhatsApp-Button {
-                margin: 40px 100px;
+                display: block;
+                margin: 40px auto;
             }
         }
 
@@ -629,7 +630,7 @@
             }
 
             .WhatsApp-Button {
-                margin: 30px 50px;
+                margin: 30px auto;
             }
         }
 
@@ -810,7 +811,8 @@
 
             .WhatsApp-Button {
                 width: 100px;
-                margin: 30px;
+                height: auto;
+                margin: 30px auto;
             }
         }
 
