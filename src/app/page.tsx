@@ -20,7 +20,7 @@ export default function Home() {
             <span className="Highlight">Web-Entwickler</span>
           </h1>
           <p>
-            Hi, ich bin Danny und habe gerade die Umschulung bei der
+            Hi, ich bin Danny und habe 2022 die Umschulung bei der
             <Link href="https://digitalcareerinstitute.org/">Digital Career Institute gGmbH (DCI)</Link>
             für die Web-Entwicklung abgeschlossen.
           </p>
