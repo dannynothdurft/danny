@@ -1,37 +1,5 @@
 [
     {
-        "id": "3a6d0004-2307-459d-a413-8a11a0d8d6d1",
-        "titel": "Gehirn Training",
-        "text": "Gehirn-Training ist ein kleines Programm, um das Gehirn zu trainieren. Hier werden kleine Rechenaufgaben angezeigt, die innerhalb von 10 Sekunden gelöst werden müssen. Werden die Aufgaben gelöst, erhält man 1 Erfahrungspunkt, für jede nicht gelöste Aufgabe, wird 1 Lebenspunkt abgezogen. Sobald die Lebenspunkte auf 0 gefallen sind, muss man bis zum nächsten Tag warten, um weiterzuspielen.",
-        "github": "https://github.com/DannyNothdurft/Gehirn-Training",
-        "website": "https://gehirn-training.netlify.app/",
-        "image": "Gehirn-Training.png"
-    },
-    {
-        "id": "374a371e-5036-4134-8fe2-8cbb34b9e7bc",
-        "titel": "Drink randomly",
-        "text": "Drink randomly ist ein kleines Trinkspiel.",
-        "github": "https://github.com/DannyNothdurft",
-        "website": "https://drinkrandomly.netlify.app/",
-        "image": "Drink-Rendomly.png"
-    },
-    {
-        "id": "54b14afa-448a-45ef-885e-5ae76a5da0de",
-        "titel": "The CryptoBook - Lexikon",
-        "text": "2020 habe ich ein Lexikon für Kryptowährung geschrieben. Diese Seite soll als Produkt Webseite dienen.",
-        "github": "https://github.com/DannyNothdurft/CryptoBook",
-        "website": "https://thecryptobook.netlify.app/",
-        "image": "The-CryptoBook.png"
-    },
-    {
-        "id": "8e442eba-9904-4d4f-87fe-ffaee523398c",
-        "titel": "Elsa Memory",
-        "text": "Für meine kleine Tochter habe ich dieses Memory Spiel programmiert. Über das iPad lässt es sich sehr leicht bedienen.",
-        "github": "https://github.com/DannyNothdurft/ElsaMemory",
-        "website": "https://elsamemorysavannah.netlify.app/",
-        "image": "Elsa-Memory.png"
-    },
-    {
         "id": "8137af20-e32a-49f1-9eba-0c68d34f37b8",
         "titel": "SaNa Sewing Handmade",
         "text": "Diese Webseite habe ich für meine Frau geschrieben. Sie wollte eine Webseite, wo sie all ihre Schnittmuster ansehen und herunterladen kann. Unter den Vorgaben meiner Frau (Styling, Filter, Kategorien etc.) ist diese Webseite entstanden.",
