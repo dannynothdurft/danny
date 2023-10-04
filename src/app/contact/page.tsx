@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { send } from 'emailjs-com';
+import { toast } from "react-hot-toast";
+import axios from "axios";
 
 interface ContactData {
     firma: string;
@@ -10,6 +11,7 @@ interface ContactData {
 }
 
 function Contact() {
+    const currentUrl = typeof window !== "undefined" ? window.location.origin : "";
 
     const [data, setData] = useState<ContactData>({
         firma: "",
@@ -32,19 +34,26 @@ function Contact() {
             nachricht: data.nachricht,
         };
         
-        send(
-            'service_4lw4uc9',
-            'template_0mwqzvx',
-            formData,
-            'SKT10FihoXG7TQydd'
-        )
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            })
-            .catch((err) => {
-                console.log('FAILED...', err);
-            });
-        e.currentTarget.reset();
+        try {
+            toast.loading("Loading...");
+            const response = await axios.post(
+              `${currentUrl}/api/send-contact`,
+              formData
+            );
+            toast.dismiss();
+            if (response.status === 200) {
+              toast.success(response.data.message);
+              setData({
+                firma: "",
+                email: "",
+                jobtitel: "",
+                nachricht: "",
+              });
+            }
+          } catch (error) {
+            toast.dismiss();
+            toast.error("Leider ist ein Fehler aufgetretten");
+          }
     };
 
     return (
