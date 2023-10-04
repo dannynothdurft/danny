@@ -12,7 +12,6 @@ interface ContactData {
 
 function Contact() {
     const currentUrl = typeof window !== "undefined" ? window.location.origin : "";
-    console.log(currentUrl)
 
     const [data, setData] = useState<ContactData>({
         firma: "",
