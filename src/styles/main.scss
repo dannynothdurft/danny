@@ -56,7 +56,6 @@
 .Home-Componente {
     min-height: calc(100vh - 41px);
     padding-top: 41px;
-    min-width: 100vw;
     font-family: "Karla", sans-serif;
     background-color: #ffffff;
     display: flex;
@@ -69,14 +68,15 @@
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 1;
     }
 
     .Text-Container {
         width: 400px;
-        height: 632px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        z-index: 2;
 
         h1 {
             font-family: 'Space Grotesk', sans-serif;
@@ -113,6 +113,7 @@
         background-color: #c2e2ff;
         border-radius: 50% 0% 50% 50%;
         position: relative;
+        z-index: 2;
 
         .Dots-Image {
             position: absolute;
@@ -392,12 +393,12 @@
 @media screen and (max-width: 1250px) {
 
     .Home-Componente {
-        padding: 100px;
         padding-top: 150px;
         flex-direction: column;
+        gap: 50px;
 
         .Text-Container {
-            height: 400px;
+            min-height: 300px;
 
             .Abstand {
                 padding: 9px;
@@ -799,7 +800,6 @@
         }
 
         .Text-Container {
-            width: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -807,12 +807,6 @@
             h1 {
                 font-size: 20px;
                 margin-bottom: 12px;
-            }
-
-            .WhatsApp-Button {
-                width: 100px;
-                height: auto;
-                margin: 30px auto;
             }
         }
 
