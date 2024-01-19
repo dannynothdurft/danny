@@ -3,11 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/main.scss";
 import LayoutProvider from "@/provider/LayoutProvider";
 
-interface CustomMetadata extends Metadata {
-  seobility?: string;
-}
-
-export const metadata: CustomMetadata = {
+export const metadata: Metadata = {
   title: "Danny Nothdurft - Fullstack Entwickler",
   description:
     "Danny Nothdurft - Ihr Schlüssel zum Erfolg in webbasierten Projekten.",
@@ -31,7 +27,6 @@ export const metadata: CustomMetadata = {
       url: "/favicons/logo-256.jpg",
     },
   },
-  seobility: "3288afe233a7dbeda71a9eec8ebc686b",
 };
 
 export default function RootLayout({
