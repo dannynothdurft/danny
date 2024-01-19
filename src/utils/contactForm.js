@@ -2,15 +2,17 @@ import nodemailer from "nodemailer";
 
 module.exports = async (mailObj, emailSubject) => {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 587,
+    service: "strato",
+    host: "smtp.strato.de",
+    port: 465,
     secure: true,
     auth: {
       user: process.env.MAIL_USER,
       pass: process.env.MAIL_APP_PASSWORD,
     },
   });
+
+  console.log(transporter);
 
   const emailContent = `
   <table style="width: 100%;">
@@ -48,8 +50,8 @@ module.exports = async (mailObj, emailSubject) => {
 `;
 
   const mailOptions = {
-    from: mailObj.email,
-    to: "danny.nothdurft@icloud.com",
+    from: process.env.MAIL_USER,
+    to: process.env.MAIL_USER,
     subject: emailSubject,
     content: "Kontakt Formular",
     html: emailContent,
