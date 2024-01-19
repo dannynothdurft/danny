@@ -19,7 +19,7 @@ function Impressum() {
         Telefon: 0176 / 566 12 113
         <br />
         Telefax: -<br />
-        E-Mail: danny.nothdurft@icloud.com
+        E-Mail: kontakt@danny-nothdurft.de
       </p>
 
       <h2>Redaktionell verantwortlich</h2>

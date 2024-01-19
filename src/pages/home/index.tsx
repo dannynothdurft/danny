@@ -2,9 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Dots from "@/images/Dots_Purple.svg";
-import CirBack from "@/images/Circle_Background.svg";
-import Avatar from "@/images/Danny_profil_pic.webp";
+import Dots from "@/utils/images/Dots_Purple.svg";
+import CirBack from "@/utils/images/Circle_Background.svg";
+import Avatar from "@/utils/images/Danny_profil_pic.webp";
 
 export default function HomePage() {
   return (

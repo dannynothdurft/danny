@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 
-function LayoutProvider({ children }: { children: ReactNode }) {
+export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <Toaster />
@@ -14,5 +14,3 @@ function LayoutProvider({ children }: { children: ReactNode }) {
     </>
   );
 }
-
-export default LayoutProvider;

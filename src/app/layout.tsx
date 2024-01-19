@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import "@/styles/main.scss";
-import LayoutProvider from "@/provider/LayoutProvider";
+import MainLayout from "@/layouts/mainLayout";
 
 export const metadata: Metadata = {
   title: "Danny Nothdurft - Fullstack Entwickler",
@@ -40,7 +40,7 @@ export default function RootLayout({
         <meta name="seobility" content="3288afe233a7dbeda71a9eec8ebc686b" />
       </head>
       <body>
-        <LayoutProvider>{children}</LayoutProvider>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
