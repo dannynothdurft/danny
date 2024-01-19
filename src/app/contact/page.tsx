@@ -55,7 +55,6 @@ function Contact() {
       }
     } catch (error) {
       toast.dismiss();
-      console.log(error.response.data.message);
       toast.error("Leider ist ein Fehler aufgetretten");
     }
   };
