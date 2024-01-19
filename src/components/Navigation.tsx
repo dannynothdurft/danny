@@ -19,7 +19,7 @@ function Navigation() {
     <div className="Navigation-Componente">
       <Link href="/">
         <Image
-          src={Logo}
+          src="/logo.svg"
           width={50}
           height={50}
           alt="Danny Nothdurft Logo"
