@@ -54,22 +54,24 @@ $mobile: "only screen and (min-width: 375px)";
     font-family: "Salsa";
   }
 
-  @media screen and (max-width: 470px) {
-    p {
-      display: none;
+  p {
+    display: none;
+    @media #{$mobileMax} {
+      display: block;
     }
   }
 }
 
 .dn-navcontain {
-  display: flex;
   color: #fff;
   position: relative;
 
   &.desktop {
     gap: 40px;
-    @media screen and (max-width: 1200px) {
-      display: none;
+    display: none;
+
+    @media #{$max} {
+      display: flex;
     }
   }
 
@@ -79,18 +81,19 @@ $mobile: "only screen and (min-width: 375px)";
     right: 0;
     gap: 10px;
     border-radius: 8px;
-    top: 80px;
+    top: 60px;
     background-color: rgba($color: #ffffff, $alpha: 0.95);
     box-shadow: 0 8px 20px #4d6bdd33;
     padding: 10px;
+    width: 100%;
 
-    @media screen and (max-width: 740px) {
-      top: 65px;
+    @media #{$tablet} {
+      top: 75px;
+      width: max-content;
     }
 
-    @media screen and (max-width: 470px) {
-      top: 60px;
-      width: 100%;
+    @media #{$max} {
+      display: none;
     }
   }
 }
@@ -174,7 +177,7 @@ $mobile: "only screen and (min-width: 375px)";
     }
   }
 
-  @media screen and (min-width: 1201px) {
+  @media #{$max} {
     display: none;
   }
 }

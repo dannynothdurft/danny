@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   DNavBar,
   DNavContain,
@@ -10,23 +10,6 @@ import {
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth > 1200) {
-        setMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const pages = [
     { href: "/", name: "Home", svg: "/svg/me.svg" },
