@@ -9,7 +9,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
     <>
       <Toaster />
       <Navbar />
-      <div className="main--container">{children}</div>
+      <main>{children}</main>
       <Footer />
     </>
   );

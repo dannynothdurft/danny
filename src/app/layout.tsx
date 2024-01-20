@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import "@/styles/global.scss";
 import "@/styles/main.scss";
 import MainLayout from "@/layouts/mainLayout";
 

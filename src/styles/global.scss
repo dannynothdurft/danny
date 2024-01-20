@@ -1,0 +1,32 @@
+:root {
+  --primary: #2981a5;
+}
+
+@font-face {
+  font-family: "Salsa";
+  src: url("../utils/fonts/Salsa/Salsa-Regular.woff2") format("woff2"),
+    /* für moderne Browser */ url("../utils/fonts/Salsa/Salsa-Regular.ttf")
+      format("truetype");
+  /* für Safari, Android, iOS */
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #130f49;
+
+  & * {
+    font-family: inherit;
+  }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}

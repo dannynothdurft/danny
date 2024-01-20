@@ -1,4 +1,5 @@
 "use client";
+import "@/styles/home.scss";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,56 +9,58 @@ import Avatar from "@/utils/images/Danny_profil_pic.webp";
 
 export default function HomePage() {
   return (
-    <main>
-      <div className="Home-Componente">
-        <div className="Circle-Background">
-          <Image
-            src={CirBack}
-            alt="Circle Background"
-            width={305}
-            height={361}
-          />
-        </div>
-        <div className="Text-Container">
-          <h1>
-            Hi, mein Name ist <br />
-            <span className="Highlight">Danny Nothdurft</span>
-          </h1>
-
-          <p>
-            Ich bin Fullstack Entwickler und arbeite gerade an einem
-            SaaS-Projekt. Zurzeit arbeite ich bei SugarShape GmbH als
-            Web-Developer & Business-Development in Vollzeit.
-          </p>
-
-          <span className="Abstand"></span>
-
-          <p>
-            Falls du daran interessiert bist, dein Projekt zu verkaufen, lade
-            ich dich ein, mein{" "}
-            <Link href="/contact" title="Kontaktformular">
-              Kontaktformular
-            </Link>{" "}
-            auszufüllen.
-          </p>
-        </div>
-        <div className="Image-Container">
-          <Image
-            width={149}
-            height={93}
-            src={Dots}
-            alt="35 Punkte"
-            className="Dots-Image"
-          />
-          <Image
-            width={632}
-            height={632}
-            src={Avatar}
-            alt="Das bin ich"
-            className="Avatar-Image"
-          />
-        </div>
+    <div className="dn-home">
+      <div className="circle-background">
+        <Image src={CirBack} alt="Circle Background" width={305} height={361} />
       </div>
-    </main>
+      <div className="dn-welcome-content">
+        <h1>
+          Hi, ich bin <br />
+          <span className="dn-highlight">Danny Nothdurft</span>
+        </h1>
+
+        <p>
+          Als Fullstack-Entwickler widme ich mich kontinuierlich an spannenden
+          Projekten. Mein Interesse umfasst nicht nur die Entwicklung eigener
+          webbasierter Programme, sondern auch den Ankauf und Optimierung
+          interessanter Projekte. Derzeit arbeite ich in Vollzeit bei der Firma{" "}
+          <Link
+            href="https://www.sugarshape.de/"
+            title="SugarShape"
+            target="_blank"
+          >
+            SugarShape
+          </Link>{" "}
+          und bin sowohl in der Entwicklungsabteilung als auch im E-Commerce
+          Management tätig.
+        </p>
+
+        <p>
+          Wenn du Interesse daran hast, dein Projekt zu verkaufen oder
+          Unterstützung bei deinem eigenen Vorhaben benötigst, lade ich dich
+          herzlich ein, mein{" "}
+          <Link href="/kontakt" title="Kontaktformular">
+            Kontaktformular
+          </Link>{" "}
+          auszufüllen.
+        </p>
+      </div>
+      <div className="dn-image-container">
+        <Image
+          width={149}
+          height={93}
+          src={Dots}
+          alt="35 Punkte"
+          className="Dots-Image"
+        />
+        <Image
+          width={632}
+          height={632}
+          src={Avatar}
+          alt="Das bin ich"
+          className="Avatar-Image"
+        />
+      </div>
+    </div>
   );
 }

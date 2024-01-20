@@ -1,104 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  color: #130f49;
-}
-
-body {
-  background-color: #fff;
-}
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --primary: #4d6bdd;
-}
 
 // Desktop-first
-
-.Home-Componente {
-  min-height: calc(100vh - 41px);
-  padding-top: 41px;
-  font-family: "Karla", sans-serif;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  overflow-x: visible;
-
-  .Circle-Background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  .Text-Container {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 2;
-
-    h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 55px;
-      margin-bottom: 20px;
-      letter-spacing: -0.1em;
-    }
-
-    p {
-      font-size: 18px;
-
-      a {
-        text-decoration: none;
-        color: #2981a5;
-      }
-    }
-
-    .Highlight {
-      color: #2981a5;
-    }
-
-    .Abstand {
-      height: 20px;
-    }
-
-    .WhatsApp-Button {
-      margin: 50px 100px;
-    }
-  }
-
-  .Image-Container {
-    width: 632px;
-    height: 632px;
-    background-color: #c2e2ff;
-    border-radius: 50% 0% 50% 50%;
-    position: relative;
-    z-index: 2;
-
-    .Dots-Image {
-      position: absolute;
-      top: 5%;
-      left: 3%;
-      z-index: 50;
-    }
-
-    .Avatar-Image {
-      width: 632px;
-      height: 632px;
-      border-radius: 50%;
-      z-index: 40;
-    }
-  }
-}
 
 .AboutMe-Pages {
   min-height: calc(100vh - 41px);
@@ -356,30 +258,6 @@ body {
 // Media Queries
 
 @media screen and (max-width: 1250px) {
-  .Home-Componente {
-    padding-top: 150px;
-    flex-direction: column;
-    gap: 50px;
-
-    .Text-Container {
-      min-height: 300px;
-
-      .Abstand {
-        padding: 9px;
-      }
-    }
-
-    .Image-Container {
-      width: 550px;
-      height: 550px;
-
-      .Avatar-Image {
-        width: 550px;
-        height: 550px;
-      }
-    }
-  }
-
   .Contact-Pages {
     padding: 80px;
     flex-direction: column;
@@ -387,36 +265,6 @@ body {
 }
 
 @media screen and (max-width: 935px) {
-  .Home-Componente {
-    .Circle-Background {
-      transform: scale(0.8);
-      top: -36px;
-      right: -31px;
-    }
-
-    .Text-Container {
-      h1 {
-        font-size: 50px;
-        margin-bottom: 15px;
-      }
-
-      .WhatsApp-Button {
-        display: block;
-        margin: 40px auto;
-      }
-    }
-
-    .Image-Container {
-      width: 500px;
-      height: 500px;
-
-      .Avatar-Image {
-        width: 500px;
-        height: 500px;
-      }
-    }
-  }
-
   .Projects-Pages {
     padding-top: 130px;
 
@@ -465,24 +313,6 @@ body {
 }
 
 @media screen and (max-width: 790px) {
-  .Home-Componente {
-    .Image-Container {
-      width: 450px;
-      height: 450px;
-
-      .Dots-Image {
-        width: 130px;
-        top: 1%;
-        left: 1%;
-      }
-
-      .Avatar-Image {
-        width: 450px;
-        height: 450px;
-      }
-    }
-  }
-
   .Projects-Pages {
     .Project-Card {
       display: flex;
@@ -561,41 +391,6 @@ body {
   }
 }
 
-@media screen and (max-width: 610px) {
-  .Home-Componente {
-    .Circle-Background {
-      transform: scale(0.6);
-      top: -72px;
-      right: -61px;
-    }
-
-    .Text-Container {
-      h1 {
-        font-size: 40px;
-        margin-bottom: 12px;
-      }
-
-      .WhatsApp-Button {
-        margin: 30px auto;
-      }
-    }
-
-    .Image-Container {
-      width: 400px;
-      height: 400px;
-
-      .Dots-Image {
-        width: 110px;
-      }
-
-      .Avatar-Image {
-        width: 400px;
-        height: 400px;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 520px) {
   .Contact-Pages {
     gap: 30px;
@@ -669,41 +464,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .Home-Componente {
-    gap: 20px;
-
-    .Circle-Background {
-      transform: scale(0.4);
-      top: -110px;
-      right: -91px;
-    }
-
-    .Text-Container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      h1 {
-        font-size: 20px;
-        margin-bottom: 12px;
-      }
-    }
-
-    .Image-Container {
-      width: 250px;
-      height: 250px;
-
-      .Dots-Image {
-        width: 70px;
-      }
-
-      .Avatar-Image {
-        width: 250px;
-        height: 250px;
-      }
-    }
-  }
-
   .Projects-Pages {
     padding-top: 80px;
 

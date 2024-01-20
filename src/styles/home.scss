@@ -1,0 +1,148 @@
+@import "/src/styles/viewports.scss";
+
+.dn-home {
+    min-height: calc(100vh - 5em);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 5em 20px 0;
+
+    .circle-background {
+        position: absolute;
+        transform: scale(0.6);
+        top: -110px;
+        right: -61px;
+        z-index: -1;
+    }
+
+    .dn-welcome-content {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            font-family: "Salsa", sans-serif;
+            font-size: 1.3em;
+            letter-spacing: -0.08em;
+
+            .dn-highlight {
+                color: var(--primary);
+
+            }
+        }
+
+        p {
+            a {
+                color: var(--primary);
+            }
+        }
+    }
+
+    .dn-image-container {
+        width: 250px;
+        height: 250px;
+        background-color: #c2e2ff;
+        border-radius: 50% 0% 50% 50%;
+        position: relative;
+        margin: 0 auto;
+    
+        .Dots-Image {
+            width: 70px;
+            position: absolute;
+            top: -4%;
+            left: 0;
+            z-index: 50;
+        }
+    
+        .Avatar-Image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            z-index: 40;
+        }
+    }
+}
+
+@media #{$mobileMax} {
+    .dn-home {
+        .dn-welcome-content {
+            max-width: 430px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    
+        .dn-image-container {
+            width: 350px;
+            height: 350px;
+        
+            .Dots-Image {
+                width: 100px;
+            }
+        
+            .Avatar-Image {
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .dn-home {
+        min-height: calc(100vh - 6em);
+        margin-top: 6em;
+        flex-direction: row;
+        padding-top: 6rem;
+
+        .dn-welcome-content {
+            gap: 25px;
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@media #{$desktop} {
+    .dn-home {
+        max-width: 1200px;
+
+        .dn-welcome-content {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    
+        .dn-image-container {
+            width: 400px;
+            height: 400px;
+        
+            .Dots-Image {
+                top: -1%;
+                width: 120px;
+            }
+        
+            .Avatar-Image {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media #{$max} {
+    .dn-home {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }

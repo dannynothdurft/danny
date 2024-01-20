@@ -1,17 +1,4 @@
-$max: "only screen and (min-width: 1240px)";
-$desktop: "only screen and (min-width: 1060px)";
-$tablet: "only screen and (min-width: 740px)";
-$mobileMax: "only screen and (min-width: 470px)";
-$mobile: "only screen and (min-width: 375px)";
-
-@font-face {
-  font-family: "Salsa";
-  src: url("../utils/fonts/Salsa/Salsa-Regular.woff2") format("woff2"),
-    /* für moderne Browser */ url("../utils/fonts/Salsa/Salsa-Regular.ttf")
-      format("truetype");
-  /* für Safari, Android, iOS */
-  font-display: swap;
-}
+@import "src/styles/viewports.scss";
 
 .dn-navbar {
   display: flex;
@@ -51,11 +38,12 @@ $mobile: "only screen and (min-width: 375px)";
   gap: 10px;
 
   * {
-    font-family: "Salsa";
+    font-family: "Salsa", sans-serif;
   }
 
   p {
     display: none;
+    
     @media #{$mobileMax} {
       display: block;
     }
