@@ -96,7 +96,7 @@
   align-items: center;
 
   &:hover {
-    color: #2981a5;
+    color: var(--primary);
     border-radius: 8px;
     box-shadow: 0 8px 20px #4d6bdd33;
   }
