@@ -13,11 +13,12 @@ export const DNavLogo = ({ src }: { src: string }) => {
     <div className="dn-navlogo">
       <Image
         src={src}
-        alt="Logo"
+        alt="Logo Danny Nothdurft"
         width={30}
         height={30}
         priority={true}
         loading="eager"
+        title="Logo Danny Nothdurft"
       />
       <p>Danny Nothdurft</p>
     </div>

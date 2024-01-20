@@ -13,11 +13,12 @@ export default function HomePage() {
       <div className="circle-background">
         <Image
           src={CirBack}
-          alt="Circle Background"
+          alt="Hintergrund"
           width={183}
           height={216}
           priority={false}
           loading="eager"
+          title="Hintergrund"
         />
       </div>
       <div className="dn-welcome-content">
@@ -61,15 +62,17 @@ export default function HomePage() {
           className="Dots-Image"
           priority={false}
           loading="eager"
+          title="35 Punkte"
         />
         <Image
           width={200}
           height={200}
           src={Avatar}
-          alt="Das bin ich"
+          alt="Danny Nothdurft"
           className="Avatar-Image"
           priority={false}
           loading="eager"
+          title="Danny Nothdurft"
         />
       </div>
     </div>
