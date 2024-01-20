@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/global.scss";
 import "@/styles/main.scss";
 import MainLayout from "@/layouts/mainLayout";
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body>
         <MainLayout>{children}</MainLayout>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
