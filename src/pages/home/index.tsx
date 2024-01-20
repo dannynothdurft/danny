@@ -11,7 +11,14 @@ export default function HomePage() {
   return (
     <div className="dn-home">
       <div className="circle-background">
-        <Image src={CirBack} alt="Circle Background" width={305} height={361} />
+        <Image
+          src={CirBack}
+          alt="Circle Background"
+          width={305}
+          height={361}
+          priority={false}
+          loading="eager"
+        />
       </div>
       <div className="dn-welcome-content">
         <h1>
@@ -52,6 +59,8 @@ export default function HomePage() {
           src={Dots}
           alt="35 Punkte"
           className="Dots-Image"
+          priority={false}
+          loading="eager"
         />
         <Image
           width={632}
@@ -59,6 +68,8 @@ export default function HomePage() {
           src={Avatar}
           alt="Das bin ich"
           className="Avatar-Image"
+          priority={false}
+          loading="eager"
         />
       </div>
     </div>
