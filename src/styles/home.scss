@@ -23,7 +23,6 @@
         h1 {
             font-family: "Salsa", sans-serif;
             font-size: 1.3em;
-            letter-spacing: -0.08em;
 
             .dn-highlight {
                 color: var(--primary);
@@ -34,7 +33,7 @@
         p {
             a {
                 color: var(--primary);
-                // font-weight: 600;
+                font-weight: 600;
                 // font-family: "Salsa", sans-serif;
             }
         }
