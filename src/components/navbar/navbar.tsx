@@ -1,4 +1,3 @@
-"use client";
 import "@/styles/navbar.scss";
 import React, { ReactNode } from "react";
 import Image from "next/image";
