@@ -41,6 +41,10 @@ export default function RootLayout({
     <html lang="de">
       <head>
         <meta name="seobility" content="3288afe233a7dbeda71a9eec8ebc686b" />
+        <meta
+          name="google-site-verification"
+          content="dyaI2PWFtURcH73MfuqvG34JtVy48TjQjjkaYzbFzas"
+        />
       </head>
       <body>
         <MainLayout>{children}</MainLayout>
