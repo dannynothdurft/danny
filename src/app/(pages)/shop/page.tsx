@@ -1,37 +1,31 @@
-"use client";
-import React, { useEffect } from "react";
+"use clinet";
+import React from "react";
+import Script from "next/script";
 
 function ShopPage() {
-  useEffect(() => {
-    function loadSpreadShopScript() {
-      const script = document.createElement("script");
-      script.type = "text/javascript";
-      script.src =
-        "https://the-cryptobook.myspreadshop.de/shopfiles/shopclient/shopclient.nocache.js";
-      document.body.appendChild(script);
-    }
-
-    loadSpreadShopScript();
-  }, []);
+  const scriptContent = `
+  var spread_shop_config = {
+    shopName: 'the-cryptobook',
+    locale: 'de_DE',
+    prefix: 'https://the-cryptobook.myspreadshop.de',
+    baseId: 'myShop'
+};
+  `;
 
   return (
-    <div id="myShop" style={{ marginTop: "120px" }}>
-      <a href="https://the-cryptobook.myspreadshop.de">the-cryptobook</a>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `
-        <script type="text/javascript">
-          var spread_shop_config = {
-            shopName: 'the-cryptobook',
-            locale: 'de_DE',
-            prefix: 'https://the-cryptobook.myspreadshop.de',
-            baseId: 'myShop'
-          };
-        </script>
-      `,
-        }}
+    <>
+      <div id="myShop">
+        <a href="https://the-cryptobook.myspreadshop.de">the-cryptobook</a>
+      </div>
+
+      <script dangerouslySetInnerHTML={{ __html: scriptContent }} />
+
+      <Script
+        type="text/javascript"
+        src="https://the-cryptobook.myspreadshop.de/shopfiles/shopclient/shopclient.nocache.js"
+        strategy="beforeInteractive"
       />
-    </div>
+    </>
   );
 }
 

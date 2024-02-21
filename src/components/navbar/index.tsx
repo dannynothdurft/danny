@@ -15,7 +15,7 @@ function Navbar() {
     { href: "/", name: "Home", svg: "/svg/me.svg" },
     { href: "/projekte", name: "Projekte", svg: "/svg/projects.svg" },
     { href: "/kontakt", name: "Kontakt", svg: "/svg/contact.svg" },
-    { href: "/shop", name: "Shop", svg: "/svg/shop.svg" },
+    //{ href: "/shop", name: "Shop", svg: "/svg/shop.svg" },
   ];
 
   return (
