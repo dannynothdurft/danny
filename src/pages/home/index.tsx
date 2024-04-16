@@ -43,6 +43,27 @@ export default function HomePage() {
         </p>
 
         <p>
+          Derzeit arbeite ich an einem Marktplatz für Grading-Karten.
+          <br />
+          Auf dieser Plattform können Nutzer Konten erstellen, um entweder ihre
+          eigenen Grading-Karten zum Verkauf anzubieten oder Karten von anderen
+          Nutzern zu erwerben. Die Webseite befindet sich noch in der
+          Anfangsphase und bietet bisher lediglich eine Registrierungs- und
+          Login-Funktion an. Der Design-Stil steht noch nicht endgültig fest und
+          wird sich im Laufe der Entwicklung noch ändern. Der nächste Schritt
+          wird sein, die Benutzerprofile einzurichten und die Möglichkeit zur
+          Erstellung von Anzeigen hinzuzufügen.
+          <br />
+          <Link
+            href="https://grading-card-market.com/"
+            title="Grading Card Market"
+            target="_blank"
+          >
+            Grading Card Market
+          </Link>
+        </p>
+
+        <p>
           Wenn du Interesse daran hast, dein Projekt zu verkaufen oder
           Unterstützung bei deinem eigenen Vorhaben benötigst, lade ich dich
           herzlich ein, mein{" "}
