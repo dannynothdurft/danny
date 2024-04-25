@@ -3,26 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Dots from "@/utils/images/Dots_Purple.svg";
-import CirBack from "@/utils/images/Circle_Background.svg";
 import Avatar from "@/utils/images/Danny_profil_pic.webp";
 
 export default function HomePage() {
   return (
     <div className="dn-home">
-      <div className="circle-background">
-        <Image
-          src={CirBack}
-          alt="Hintergrund"
-          width={183}
-          height={216}
-          priority={false}
-          loading="eager"
-          title="Hintergrund"
-        />
-      </div>
       <div className="dn-welcome-content">
         <h1>
-          Hi, ich bin <br />
+          Hi, ich bin
+          <br />
           <span className="dn-highlight">Danny Nothdurft</span>
         </h1>
 
