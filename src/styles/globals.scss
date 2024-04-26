@@ -22,21 +22,21 @@ $header-height: 5rem;
 }
 
 // Definition der Farben für den Hellmodus
-    $li-clr-bg: #fcfcfc;
-    $li-clr-bg-alt: #fff;
-    $li-clr-fg: #555;
-    $li-clr-fg-alt: #444;
-    $li-clr-primary: #2978b5;
-    $li-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$li-clr-bg: #fcfcfc;
+$li-clr-bg-alt: #fff;
+$li-clr-fg: #555;
+$li-clr-fg-alt: #444;
+$li-clr-primary: #2978b5;
+$li-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   
   
   // Definition der Farben für den Dunkelmodus
-    $da-clr-bg: #23283e;
-    $da-clr-bg-alt: #2a2f4c;
-    $da-clr-fg: #bdbddd;
-    $da-clr-fg-alt: #cdcdff;
-    $da-clr-primary: #90a0d9;
-    $da-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+$da-clr-bg: #23283e;
+$da-clr-bg-alt: #2a2f4c;
+$da-clr-fg: #bdbddd;
+$da-clr-fg-alt: #cdcdff;
+$da-clr-primary: #90a0d9;
+$da-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   
   
   // Stildefinitionen für den Body basierend auf dem aktuellen Theme-Modus
@@ -62,12 +62,12 @@ h3,
 h4 {
   line-height: 1.4;
   
-  &.light {
-    color: $li-clr-bg-alt;
-  }
-
-  &.dark {
+  body.light & {
     color: $da-clr-bg-alt
+  }
+  
+  body.dark & {
+    color: $li-clr-bg-alt;
   }
 }
 
@@ -166,21 +166,21 @@ button {
 .link--nav {
   /* text-transform: lowercase; */
   font-weight: 500;
-  &.light {
+  body.light & {
     color: $li-clr-fg
   }
   
-  &.dark {
+  body.dark & {
     color: $da-clr-fg
   }
 }
 
 .link--icon {
-  &.light {
+  body.light & {
     color: $li-clr-fg
   }
   
-  &.dark {
+  body.dark & {
     color: $da-clr-fg
   }
 }
@@ -196,18 +196,16 @@ button {
 }
 
 .btn--outline {
-  color: var(--clr-primary);
-  border: 2px solid var(--clr-primary);
   position: relative;
   overflow: hidden;
   z-index: 1;
   
-  &.light {
+  body.light & {
     color: $li-clr-primary;
     border: 2px solid $li-clr-primary;
   }
   
-  &.dark {
+  body.dark & {
     color: $da-clr-primary;
     border: 2px solid $da-clr-primary;
   }
@@ -215,11 +213,11 @@ button {
 
 .btn--outline:hover,
 .btn--outline:focus {
-  &.light {
+  body.light & {
     color: $li-clr-bg
   }
   
-  &.dark {
+  body.dark & {
     color: $da-clr-bg
   }
 }
@@ -234,11 +232,11 @@ button {
   z-index: -1;
   transition: right 0.2s ease-in-out;
 
-  &.light {
+  body.light & {
     background-color: $li-clr-primary
   }
   
-  &.dark {
+  body.dark & {
     background-color: $da-clr-primary
   }
 }
@@ -252,11 +250,11 @@ button {
   text-transform: initial;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
-  &.light {
+  body.light & {
     background-color: $li-clr-bg-alt
   }
   
-  &.dark {
+  body.dark & {
     background-color: $da-clr-bg-alt
   }
 }
@@ -271,11 +269,11 @@ button {
 
 .btn--icon:hover,
 .btn--icon:focus {
-  &.light {
+  body.light & {
     color: $li-clr-primary
   }
   
-  &.dark {
+  body.dark & {
     color: $da-clr-primary
   }
 }
@@ -285,12 +283,30 @@ button {
 }
 
 .text--strong {
-  &.light {
+  body.light & {
     color: $li-clr-primary
   }
   
-  &.dark {
+  body.dark & {
     color: $da-clr-primary
+  }
+}
+
+.contact {
+  flex-direction: column;
+}
+
+.scroll-top {
+  display: none;
+}
+
+@media (min-width: 915px) {
+  .scroll-top {
+    background-color: transparent;
+    display: unset;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
   }
 }
 
