@@ -2,14 +2,25 @@ import React from "react";
 import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import "@/styles/global.scss";
-import "@/styles/main.scss";
 import MainLayout from "@/layouts/mainLayout";
+
+import "@/styles/index.css";
+import "@/styles/App.css";
+import "@/styles/Header.css";
+import "@/styles/Navbar.css";
+import "@/styles/About.css";
+import "@/styles/Projects.css";
+import "@/styles/ProjectCard.css";
+import "@/styles/Skills.css";
+import "@/styles/Contact.css";
+import "@/styles/ScrollToTop.css";
+import "@/styles/Footer.css";
+
+import { ThemeProvider } from "@/contexts/theme";
 
 export const metadata: Metadata = {
   title: "Danny Nothdurft - Fullstack Entwickler",
-  description:
-    "Danny Nothdurft - Ihr Schlüssel zum Erfolg in webbasierten Projekten.",
+  description: "Danny Nothdurft - Portfolio",
   robots: "index,follow",
   manifest: "/manifest.json",
   authors: [{ name: "Danny Nothdurft" }],
@@ -53,7 +64,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <MainLayout>{children}</MainLayout>
+        <ThemeProvider>
+          <MainLayout>{children}</MainLayout>
+        </ThemeProvider>
         <SpeedInsights />
         <Analytics />
       </body>

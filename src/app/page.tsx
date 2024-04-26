@@ -1,5 +1,4 @@
-import HomePage from "@/pages/home";
-
-export default function Home() {
-  return <HomePage />;
-}
+const Page = () => {
+  return <p>Fehler</p>;
+};
+export default Page;

@@ -1,0 +1,68 @@
+{
+  "about": {
+    "name": "Danny Nothdurft",
+    "greetingEmoji": "👋",
+    "role": "Fullstack Developer",
+    "company": "SugarShape",
+    "description": [
+      "Ich arbeite momentan an der Entwicklung eines Marktplatzes für Grading-Karten. Auf dieser Plattform köönen Nuter dann mit ihren Karten handeln."
+    ],
+    "resume": "https://grading-card-market.com/",
+    "social": {
+      "github": "https://github.com/dannynothdurft",
+      "linkedin": "https://www.linkedin.com/in/danny-nothdurft"
+    }
+  },
+  "projects": [
+    {
+      "thumbnail": "images/em-collect.png",
+      "name": "EM-Collectibles",
+      "description": [
+        "Dieser Shop befindet sich derzeit noch im Aufbau."
+      ],
+      "stack": [
+        "Next.js",
+        "SASS",
+        "React",
+        "MongoDB",
+        "Redux"
+      ],
+      "sourceCode": "https://github.com/dannynothdurft/em-collectibles",
+      "livePreview": "https://em-collectibles.vercel.app"
+    },
+    {
+      "thumbnail": "images/SaNaSewing.png",
+      "name": "SaNa Sewings Handmade",
+      "description": [
+        "Diese Webseite habe ich für meine Frau geschrieben. Sie wollte eine Webseite, wo sie all ihre Schnittmuster ansehen und herunterladen kann. Unter den Vorgaben meiner Frau (Styling, Filter, Kategorien etc.) ist diese Webseite entstanden."
+      ],
+      "stack": [
+        "SASS",
+        "React"
+      ],
+      "sourceCode": "",
+      "livePreview": "https://sanasewing.netlify.app"
+    }
+  ],
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Redux",
+    "SASS",
+    "Vercal",
+    "Netlify",
+    "MongoDB",
+    "JSON",
+    "Node.js",
+    "ReactNative",
+    "Git",
+    "GitLab",
+    "BitBucket"
+  ],
+  "contact": {
+    "email": "kontakt@danny-nothdurft.de"
+  }
+}

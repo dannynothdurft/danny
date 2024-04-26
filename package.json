@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
     "@react-icons/all-files": "^4.1.0",
     "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.5",
@@ -17,10 +19,13 @@
     "emailjs-com": "^3.2.0",
     "next": "latest",
     "nodemailer": "^6.9.5",
+    "prop-types": "^15.8.1",
     "react": "latest",
     "react-dom": "latest",
     "react-hot-toast": "^2.4.1",
-    "sass": "^1.68.0"
+    "react-hyphen": "^1.4.0",
+    "sass": "^1.68.0",
+    "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "@types/node": "latest",
