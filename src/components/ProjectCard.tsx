@@ -1,10 +1,14 @@
-const ProjectCard = ({ project }) => (
+import Image from "next/image";
+
+const ProjectCard = ({ project }: { project: any }) => (
   <div className="project">
     {project.thumbnail && (
-      <img
+      <Image
         className="project__thumbnail"
         src={project.thumbnail}
         alt="thumbnail"
+        width={200}
+        height={150}
       />
     )}
 
@@ -13,7 +17,7 @@ const ProjectCard = ({ project }) => (
 
       {project.description && (
         <div className="project__description paragraph__list">
-          {project.description.map((item, index) => (
+          {project.description.map((item: string, index: number) => (
             <p key={index}>{item}</p>
           ))}
         </div>
@@ -21,7 +25,7 @@ const ProjectCard = ({ project }) => (
 
       {project.stack && (
         <ul className="project__stack">
-          {project.stack.map((item, index) => (
+          {project.stack.map((item: string, index: number) => (
             <li key={index} className="project__stack-item">
               {item}
             </li>
@@ -38,7 +42,13 @@ const ProjectCard = ({ project }) => (
             aria-label="source code"
             className="link link--icon"
           >
-            <img className="icon" src="/svg/github.svg" />
+            <Image
+              alt="icon"
+              width={30}
+              height={30}
+              className="icon"
+              src="/svg/github.svg"
+            />
           </a>
         )}
 
@@ -50,7 +60,13 @@ const ProjectCard = ({ project }) => (
             aria-label="live preview"
             className="link link--icon"
           >
-            <img className="icon" src="/svg/launch.svg" />
+            <Image
+              alt="icon"
+              width={30}
+              height={30}
+              className="icon"
+              src="/svg/launch.svg"
+            />
           </a>
         )}
       </div>

@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { projects } from "../data/portfolio";
+import { projects } from "@/data/portfolio.json";
 
 const Projects = () => {
   if (!projects.length) return null;

@@ -15,7 +15,7 @@
   },
   "projects": [
     {
-      "thumbnail": "images/em-collect.png",
+      "thumbnail": "/images/em-collect.png",
       "name": "EM-Collectibles",
       "description": [
         "Dieser Shop befindet sich derzeit noch im Aufbau."
@@ -31,7 +31,7 @@
       "livePreview": "https://em-collectibles.vercel.app"
     },
     {
-      "thumbnail": "images/SaNaSewing.png",
+      "thumbnail": "/images/SaNaSewing.png",
       "name": "SaNa Sewings Handmade",
       "description": [
         "Diese Webseite habe ich für meine Frau geschrieben. Sie wollte eine Webseite, wo sie all ihre Schnittmuster ansehen und herunterladen kann. Unter den Vorgaben meiner Frau (Styling, Filter, Kategorien etc.) ist diese Webseite entstanden."

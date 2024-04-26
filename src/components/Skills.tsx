@@ -1,4 +1,4 @@
-import { skills } from "../data/portfolio";
+import { skills } from "@/data/portfolio.json";
 
 const Skills = () => {
   if (!skills.length) return null;

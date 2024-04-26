@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../contexts/theme";
-import { about, projects, skills, contact } from "../data/portfolio";
+import { about, projects, skills, contact } from "@/data/portfolio.json";
+import Image from "next/image";
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
@@ -85,9 +86,21 @@ const Navbar = () => {
         className="btn btn--icon nav__button nav__hamburger"
       >
         {showNavList ? (
-          <img className="icon" src="/svg/close.svg" />
+          <Image
+            alt="icon"
+            width={30}
+            height={30}
+            className="icon"
+            src="/svg/close.svg"
+          />
         ) : (
-          <img className="icon" src="/svg/menu.svg" />
+          <Image
+            alt="icon"
+            width={30}
+            height={30}
+            className="icon"
+            src="/svg/menu.svg"
+          />
         )}
       </button>
 
@@ -98,9 +111,21 @@ const Navbar = () => {
         className="btn btn--icon nav__button nav__theme"
       >
         {themeName === "dark" ? (
-          <img className="icon" src="/svg/sun.svg" />
+          <Image
+            alt="icon"
+            width={30}
+            height={30}
+            className="icon"
+            src="/svg/sun.svg"
+          />
         ) : (
-          <img className="icon" src="/svg/moon.svg" />
+          <Image
+            alt="icon"
+            width={30}
+            height={30}
+            className="icon"
+            src="/svg/moon.svg"
+          />
         )}
       </button>
     </nav>
