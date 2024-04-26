@@ -20,18 +20,18 @@ const About = () => {
         <div>
           {firstName && (
             <h1 className="about__greeting animate__animated animate__fadeInUp animate__delay-1s">
-              Hey, I&apos;m <span className="text--strong">{firstName}</span>.
+              Hey, ich bin <span className="text--strong">{firstName}</span>.
               {greetingEmoji && <span> {greetingEmoji}</span>}
             </h1>
           )}
 
           {role && (
             <h1 className="about__role animate__animated animate__fadeInUp animate__delay-3s">
-              I&apos;m a {role}
+              Ein {role}
               {company && (
                 <span>
                   {" "}
-                  at <span className="text--strong">{company}</span>
+                  von <span className="text--strong">{company}</span>
                 </span>
               )}
               .

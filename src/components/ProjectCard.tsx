@@ -1,4 +1,5 @@
 import "@/styles/projects.scss";
+
 import Github from "@/svg/github";
 import Launch from "@/svg/launch";
 
