@@ -2,8 +2,6 @@ import ProjectCard from "./ProjectCard";
 import { projects } from "@/data/portfolio.json";
 
 const Projects = () => {
-  if (!projects.length) return null;
-
   return (
     <section
       className="section projects animate__animated animate__fadeIn animate__delay-5s"

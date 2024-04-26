@@ -1,8 +1,7 @@
-import { skills } from "@/data/portfolio.json";
+import data from "@/data/portfolio.json";
 
 const Skills = () => {
-  if (!skills.length) return null;
-
+  const skills = data.skills;
   return (
     <section
       className="section skills animate__animated animate__fadeIn animate__delay-5s"
