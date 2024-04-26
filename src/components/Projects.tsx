@@ -1,4 +1,4 @@
-import "@/styles/projects.scss";
+import "@/styles/project.scss";
 
 import ProjectCard from "@/components/ProjectCard";
 import DATA from "@/data/portfolio.json";
