@@ -310,6 +310,20 @@ button {
   }
 }
 
+.skills__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills__list-item {
+  margin: 0.5rem;
+}
+
+.skills__list-item:hover {
+  cursor: auto;
+}
+
 
 .footer {
   padding: 2rem;
