@@ -1,7 +1,5 @@
 import uniqid from "uniqid";
 import Hyphenated from "react-hyphen";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { about } from "../data/portfolio";
 
 const About = () => {
@@ -75,7 +73,7 @@ const About = () => {
                   aria-label="github"
                   className="link link--icon"
                 >
-                  <GitHubIcon />
+                  <img className="icon" src="/svg/github.svg" />
                 </a>
               )}
 
@@ -87,7 +85,7 @@ const About = () => {
                   aria-label="linkedin"
                   className="link link--icon"
                 >
-                  <LinkedInIcon />
+                  <img className="icon" src="/svg/linkin.svg" />
                 </a>
               )}
             </>

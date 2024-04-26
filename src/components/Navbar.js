@@ -1,10 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../contexts/theme";
 import { about, projects, skills, contact } from "../data/portfolio";
-import CloseIcon from "@material-ui/icons/Close";
-import MenuIcon from "@material-ui/icons/Menu";
-import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
@@ -88,7 +84,11 @@ const Navbar = () => {
         aria-label="toggle navigation"
         className="btn btn--icon nav__button nav__hamburger"
       >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
+        {showNavList ? (
+          <img className="icon" src="/svg/close.svg" />
+        ) : (
+          <img className="icon" src="/svg/menu.svg" />
+        )}
       </button>
 
       <button
@@ -97,7 +97,11 @@ const Navbar = () => {
         aria-label="toggle theme"
         className="btn btn--icon nav__button nav__theme"
       >
-        {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+        {themeName === "dark" ? (
+          <img className="icon" src="/svg/sun.svg" />
+        ) : (
+          <img className="icon" src="/svg/moon.svg" />
+        )}
       </button>
     </nav>
   );

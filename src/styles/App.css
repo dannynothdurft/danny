@@ -133,3 +133,7 @@
 .text--strong {
   color: var(--clr-primary);
 }
+
+.icon {
+  width: 35px;
+}
