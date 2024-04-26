@@ -1,5 +1,3 @@
-import uniqid from "uniqid";
-
 const ProjectCard = ({ project }) => (
   <div className="project">
     {project.thumbnail && (
@@ -15,16 +13,16 @@ const ProjectCard = ({ project }) => (
 
       {project.description && (
         <div className="project__description paragraph__list">
-          {project.description.map((item) => (
-            <p key={uniqid()}>{item}</p>
+          {project.description.map((item, index) => (
+            <p key={index}>{item}</p>
           ))}
         </div>
       )}
 
       {project.stack && (
         <ul className="project__stack">
-          {project.stack.map((item) => (
-            <li key={uniqid()} className="project__stack-item">
+          {project.stack.map((item, index) => (
+            <li key={index} className="project__stack-item">
               {item}
             </li>
           ))}

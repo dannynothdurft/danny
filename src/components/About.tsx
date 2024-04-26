@@ -1,6 +1,5 @@
-import uniqid from "uniqid";
-import Hyphenated from "react-hyphen";
-import { about } from "../data/portfolio";
+import { about } from "@/data/portfolio.json";
+import Image from "next/image";
 
 const About = () => {
   const { name, role, company, description, resume, social, greetingEmoji } =
@@ -40,14 +39,9 @@ const About = () => {
         <div className={fadeInAnimationClassName}>
           {description && (
             <div className="about__desc paragraph__list">
-              <Hyphenated>
-                {description.map((item) => (
-                  <p key={uniqid()}>{item}</p>
-                ))}
-                {/* fragments added to prevent react-hyphen error when description length < 2 */}
-                <></>
-                <></>
-              </Hyphenated>
+              {description.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
             </div>
           )}
         </div>
@@ -57,9 +51,7 @@ const About = () => {
         <div className={`about__contact center ${fadeInAnimationClassName}`}>
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
-              <span type="button" className="btn btn--outline">
-                Resume
-              </span>
+              <span className="btn btn--outline">Resume</span>
             </a>
           )}
 
@@ -73,7 +65,13 @@ const About = () => {
                   aria-label="github"
                   className="link link--icon"
                 >
-                  <img className="icon" src="/svg/github.svg" />
+                  <Image
+                    className="icon"
+                    src="/svg/github.svg"
+                    alt="Github"
+                    width={30}
+                    height={30}
+                  />
                 </a>
               )}
 
@@ -85,7 +83,13 @@ const About = () => {
                   aria-label="linkedin"
                   className="link link--icon"
                 >
-                  <img className="icon" src="/svg/linkin.svg" />
+                  <Image
+                    className="icon"
+                    src="/svg/linkin.svg"
+                    alt="LinkIn"
+                    width={30}
+                    height={30}
+                  />
                 </a>
               )}
             </>

@@ -1,23 +1,22 @@
-import uniqid from 'uniqid'
-import ProjectCard from './ProjectCard'
-import { projects } from '../data/portfolio'
+import ProjectCard from "./ProjectCard";
+import { projects } from "../data/portfolio";
 
 const Projects = () => {
-  if (!projects.length) return null
+  if (!projects.length) return null;
 
   return (
     <section
-      className='section projects animate__animated animate__fadeIn animate__delay-5s'
-      id='projects'
+      className="section projects animate__animated animate__fadeIn animate__delay-5s"
+      id="projects"
     >
-      <h2 className='section__title'>Projects</h2>
-      <div className='projects__column'>
-        {projects.map((project) => (
-          <ProjectCard key={uniqid()} project={project} />
+      <h2 className="section__title">Projects</h2>
+      <div className="projects__column">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

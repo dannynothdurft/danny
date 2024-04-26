@@ -22,8 +22,7 @@
     "react-dom": "latest",
     "react-hot-toast": "^2.4.1",
     "react-hyphen": "^1.4.0",
-    "sass": "^1.68.0",
-    "uniqid": "^5.4.0"
+    "sass": "^1.68.0"
   },
   "devDependencies": {
     "@types/node": "latest",
