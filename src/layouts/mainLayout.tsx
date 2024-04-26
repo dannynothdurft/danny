@@ -1,6 +1,5 @@
 "use client";
-import React, { ReactNode, useContext, useEffect, useRef } from "react";
-import { ThemeContext } from "@/contexts/theme";
+import React, { useRef } from "react";
 
 import Header from "@/components/Header";
 import About from "../components/About";
@@ -10,17 +9,8 @@ import Contact from "../components/Contact";
 import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/Footer";
 
-import { Toaster } from "react-hot-toast";
-
 export default function MainLayout() {
-  const [{ themeName }] = useContext(ThemeContext);
   const rootRef = useRef(null);
-
-  useEffect(() => {
-    const oldThemeName = themeName === "dark" ? "light" : "dark";
-    document.body.classList.remove(oldThemeName);
-    document.body.classList.add(themeName);
-  }, [themeName]);
 
   return (
     <div ref={rootRef} className="app" id="top">

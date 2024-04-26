@@ -16,6 +16,7 @@
     "dotenv": "^16.3.1",
     "emailjs-com": "^3.2.0",
     "next": "latest",
+    "next-themes": "^0.3.0",
     "nodemailer": "^6.9.5",
     "prop-types": "^15.8.1",
     "react": "latest",

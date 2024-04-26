@@ -1,9 +1,9 @@
-import { about } from "@/data/portfolio.json";
+import data from "@/data/portfolio.json";
 import Image from "next/image";
 
 const About = () => {
   const { name, role, company, description, resume, social, greetingEmoji } =
-    about;
+    data.about;
   const firstName = name ? name.split(" ")[0] : null;
   const fadeInAnimationClassName =
     "animate__animated animate__fadeIn animate__delay-5s";

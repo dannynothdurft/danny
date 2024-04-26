@@ -16,7 +16,7 @@ import "@/styles/Contact.css";
 import "@/styles/ScrollToTop.css";
 import "@/styles/Footer.css";
 
-import { ThemeProvider } from "@/contexts/theme";
+import { Providers } from "@/providers/theme";
 
 export const metadata: Metadata = {
   title: "Danny Nothdurft - Fullstack Entwickler",
@@ -64,9 +64,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ThemeProvider>
+        <Providers>
           <MainLayout />
-        </ThemeProvider>
+        </Providers>
         <SpeedInsights />
         <Analytics />
       </body>
