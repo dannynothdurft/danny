@@ -13,11 +13,37 @@ export default function ThemeSwitch() {
 
   useEffect(() => setMounted(true), []);
 
-  if (!mounted) return <Setting />;
+  const setThemeMode = (mode: string) => {
+    setTheme(mode);
+  };
+
+  useEffect(() => {
+    if (resolvedTheme !== undefined) {
+      const oldThemeName = resolvedTheme === "dark" ? "light" : "dark";
+      document.body.classList.remove(oldThemeName);
+      document.body.classList.add(resolvedTheme);
+    }
+  }, [resolvedTheme]);
+
+  if (!mounted)
+    return (
+      <button
+        type="button"
+        aria-label="toggle theme"
+        className="btn btn--icon nav__button nav__theme"
+      >
+        <Setting />
+      </button>
+    );
 
   if (resolvedTheme === "dark") {
     return (
-      <button onClick={() => setTheme("light")}>
+      <button
+        type="button"
+        aria-label="toggle theme"
+        className="btn btn--icon nav__button nav__theme"
+        onClick={() => setThemeMode("light")}
+      >
         <Sun />
       </button>
     );
@@ -25,7 +51,12 @@ export default function ThemeSwitch() {
 
   if (resolvedTheme === "light") {
     return (
-      <button onClick={() => setTheme("dark")}>
+      <button
+        type="button"
+        aria-label="toggle theme"
+        className="btn btn--icon nav__button nav__theme"
+        onClick={() => setThemeMode("dark")}
+      >
         <Moon />
       </button>
     );
