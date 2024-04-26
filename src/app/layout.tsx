@@ -2,6 +2,8 @@ import "@/styles/globals.scss";
 
 import type { Metadata } from "next";
 import { LayoutProviders } from "@/providers/layout";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="de">
       <head>
@@ -25,6 +27,8 @@ export default function RootLayout({
       </head>
       <body>
         <LayoutProviders>{children}</LayoutProviders>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
