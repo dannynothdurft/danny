@@ -1,8 +1,8 @@
 {
   "name": "Danny Nothdurft",
   "short_name": "Danny N.",
-  "theme_color": "#fff",
-  "background_color": "#fff",
+  "theme_color": "#23283e",
+  "background_color": "#23283e",
   "display": "fullscreen",
   "orientation": "landscape",
   "scope": "/",

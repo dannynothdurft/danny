@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  
   scroll-behavior: smooth;
 }
+
 $header-height: 5rem;
 
 * {
@@ -138,13 +138,26 @@ button {
 }
 
 .link {
-  color: var(--clr-primary);
   padding: 0.3rem 0;
   position: relative;
+
+  body.light & {
+    color: $li-clr-primary
+  }
+  
+  body.dark & {
+    color: $da-clr-primary
+  }
 }
 
 .link:hover {
-  color: var(--clr-primary);
+  body.light & {
+    color: $li-clr-primary
+  }
+  
+  body.dark & {
+    color: $da-clr-primary
+  }
 }
 
 .link::before {
@@ -154,8 +167,15 @@ button {
   height: 0.2rem;
   position: absolute;
   bottom: 0;
-  background-color: var(--clr-primary);
   transition: width 0.2s ease-in;
+
+  body.light & {
+    background-color: $li-clr-primary
+  }
+  
+  body.dark & {
+    background-color: $da-clr-primary
+  }
 }
 
 .link:hover::before,
@@ -176,6 +196,10 @@ button {
 }
 
 .link--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   body.light & {
     color: $li-clr-fg
   }
@@ -334,7 +358,14 @@ button {
 .footer__link {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--clr-fg);
+
+  body.light & {
+    color: $li-clr-fg
+  }
+  
+  body.dark & {
+    color: $da-clr-fg
+  }
 }
 
 @media (min-width: 600px) {

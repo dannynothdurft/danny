@@ -1,3 +1,20 @@
+// Definition der Farben für den Hellmodus
+$li-clr-bg: #fcfcfc;
+$li-clr-bg-alt: #fff;
+$li-clr-fg: #555;
+$li-clr-fg-alt: #444;
+$li-clr-primary: #2978b5;
+$li-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+  
+  // Definition der Farben für den Dunkelmodus
+$da-clr-bg: #23283e;
+$da-clr-bg-alt: #2a2f4c;
+$da-clr-fg: #bdbddd;
+$da-clr-fg-alt: #cdcdff;
+$da-clr-primary: #90a0d9;
+$da-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ 
 .projects__column {
   margin-bottom: 2.5rem;
   display: flex;
@@ -8,11 +25,18 @@
 .project {
   padding: 2rem;
   text-align: center;
-  box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+
+  body.light & {
+    box-shadow: $li-shadow;
+  }
+  
+  body.dark & {
+    box-shadow: $da-shadow;
+  }
 }
 
 .project:hover {
@@ -42,7 +66,14 @@
   margin: 0.5rem;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+
+  body.light & {
+    color: $li-clr-fg-alt;
+  }
+  
+  body.dark & {
+    color: $da-clr-fg-alt;
+  }
 }
 
 .project__links {

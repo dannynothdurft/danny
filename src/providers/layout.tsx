@@ -13,7 +13,7 @@ export function LayoutProviders({ children }: { children: ReactNode }) {
   useEffect(() => {
     window.setTimeout(() => {
       rootRef.current?.style.removeProperty("pointer-events");
-    }, 5000);
+    }, 5); //! Wenn die Animation drin ist dann af 5000 setzen
   }, []);
 
   return (
