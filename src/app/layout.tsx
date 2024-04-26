@@ -44,6 +44,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <meta name="seobility" content="3288afe233a7dbeda71a9eec8ebc686b" />
+        <meta
+          name="google-site-verification"
+          content="dyaI2PWFtURcH73MfuqvG34JtVy48TjQjjkaYzbFzas"
+        />
       </head>
       <body>
         <LayoutProviders>{children}</LayoutProviders>
