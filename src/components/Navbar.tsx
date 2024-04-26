@@ -4,7 +4,11 @@ import data from "@/data/portfolio.json";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext);
+  const { themeName, toggleTheme } = useContext<{
+    themeName: string;
+    toggleTheme: () => void;
+  }>(ThemeContext);
+
   const [showNavList, setShowNavList] = useState(false);
   const projects = data.projects;
   const skills = data.skills;
