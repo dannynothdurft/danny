@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 
 import Sun from "@/svg/sun";
 import Moon from "@/svg/moon";
+import Setting from "@/svg/setting";
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
@@ -12,7 +13,7 @@ export default function ThemeSwitch() {
 
   useEffect(() => setMounted(true), []);
 
-  if (!mounted) return <button onClick={() => setTheme("light")}>Sonne</button>;
+  if (!mounted) return <Setting />;
 
   if (resolvedTheme === "dark") {
     return (
