@@ -1,7 +1,8 @@
 import ProjectCard from "./ProjectCard";
-import { projects } from "@/data/portfolio.json";
+import data from "@/data/portfolio.json";
 
 const Projects = () => {
+  const projects = data.projects;
   return (
     <section
       className="section projects animate__animated animate__fadeIn animate__delay-5s"

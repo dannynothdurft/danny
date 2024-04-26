@@ -1,11 +1,15 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../contexts/theme";
-import { about, projects, skills, contact } from "@/data/portfolio.json";
+import data from "@/data/portfolio.json";
 import Image from "next/image";
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
   const [showNavList, setShowNavList] = useState(false);
+  const projects = data.projects;
+  const skills = data.skills;
+  const contact = data.contact;
+  const about = data.about;
   const { name } = about;
 
   const toggleNavListOverlay = () => {
