@@ -1,3 +1,16 @@
+.header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header.shadow {
+  box-shadow: var(--shadow);
+}
+
 .nav {
   padding-top: 0.4rem;
   display: flex;
@@ -15,6 +28,10 @@
   align-items: center;
   position: fixed;
   inset: 0;
+
+  &.open {
+    display: flex;
+  }
 }
 
 .nav__list-item {
@@ -24,6 +41,8 @@
 .nav__button {
   z-index: 1;
 }
+
+
 
 @media (min-width: 600px) {
   .nav__list {
@@ -44,6 +63,6 @@
   }
 
   .nav__hamburger {
-    display: none;
+    display: none !important;
   }
 }

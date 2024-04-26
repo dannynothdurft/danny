@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Arrow from "@/svg/arrow";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,13 +14,7 @@ const ScrollToTop = () => {
   return isVisible ? (
     <div className="scroll-top">
       <a href="#top">
-        <Image
-          alt="icon"
-          width={30}
-          height={30}
-          className="icon"
-          src="/svg/arrow.svg"
-        />
+        <Arrow />
       </a>
     </div>
   ) : null;

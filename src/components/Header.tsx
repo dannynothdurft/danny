@@ -1,6 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import "@/styles/header.scss";
+import React, { useEffect, useState } from "react";
+
+import Navbar from "@/components/Navbar";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);

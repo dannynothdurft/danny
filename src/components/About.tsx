@@ -1,9 +1,13 @@
-import data from "@/data/portfolio.json";
-import Image from "next/image";
+import "@/styles/about.scss";
+
+import Github from "@/svg/github";
+import Linkedin from "@/svg/linkedin";
+
+import DATA from "@/data/portfolio.json";
 
 const About = () => {
   const { name, role, company, description, resume, social, greetingEmoji } =
-    data.about;
+    DATA.about;
   const firstName = name ? name.split(" ")[0] : null;
   const fadeInAnimationClassName =
     "animate__animated animate__fadeIn animate__delay-5s";
@@ -16,17 +20,18 @@ const About = () => {
         <div>
           {firstName && (
             <h1 className="about__greeting animate__animated animate__fadeInUp animate__delay-1s">
-              Hi, ich bin <span className="text--strong">{firstName}</span>.
+              Hey, ich bin <span className="text--strong">{firstName}</span>.
               {greetingEmoji && <span> {greetingEmoji}</span>}
             </h1>
           )}
 
           {role && (
             <h1 className="about__role animate__animated animate__fadeInUp animate__delay-3s">
-              Ich bin ein {role}
+              Ein {role}
               {company && (
                 <span>
-                  bei <span className="text--strong">{company}</span>
+                  {" "}
+                  von <span className="text--strong">{company}</span>
                 </span>
               )}
               .
@@ -42,6 +47,9 @@ const About = () => {
               {description.map((item, index) => (
                 <p key={index}>{item}</p>
               ))}
+              {/* fragments added to prevent react-hyphen error when description length < 2 */}
+              <></>
+              <></>
             </div>
           )}
         </div>
@@ -51,7 +59,9 @@ const About = () => {
         <div className={`about__contact center ${fadeInAnimationClassName}`}>
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
-              <span className="btn btn--outline">Resume</span>
+              <button type="button" className="btn btn--outline">
+                Resume
+              </button>
             </a>
           )}
 
@@ -65,13 +75,7 @@ const About = () => {
                   aria-label="github"
                   className="link link--icon"
                 >
-                  <Image
-                    className="icon"
-                    src="/svg/github.svg"
-                    alt="Github"
-                    width={30}
-                    height={30}
-                  />
+                  <Github />
                 </a>
               )}
 
@@ -83,13 +87,7 @@ const About = () => {
                   aria-label="linkedin"
                   className="link link--icon"
                 >
-                  <Image
-                    className="icon"
-                    src="/svg/linkin.svg"
-                    alt="LinkIn"
-                    width={30}
-                    height={30}
-                  />
+                  <Linkedin />
                 </a>
               )}
             </>

@@ -1,14 +1,13 @@
-import Image from "next/image";
+import Github from "@/svg/github";
+import Launch from "@/svg/launch";
 
 const ProjectCard = ({ project }: { project: any }) => (
   <div className="project">
     {project.thumbnail && (
-      <Image
+      <img
         className="project__thumbnail"
         src={project.thumbnail}
         alt="thumbnail"
-        width={200}
-        height={150}
       />
     )}
 
@@ -42,13 +41,7 @@ const ProjectCard = ({ project }: { project: any }) => (
             aria-label="source code"
             className="link link--icon"
           >
-            <Image
-              alt="icon"
-              width={30}
-              height={30}
-              className="icon"
-              src="/svg/github.svg"
-            />
+            <Github />
           </a>
         )}
 
@@ -60,13 +53,7 @@ const ProjectCard = ({ project }: { project: any }) => (
             aria-label="live preview"
             className="link link--icon"
           >
-            <Image
-              alt="icon"
-              width={30}
-              height={30}
-              className="icon"
-              src="/svg/launch.svg"
-            />
+            <Launch />
           </a>
         )}
       </div>

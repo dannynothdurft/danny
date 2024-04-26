@@ -1,7 +1,8 @@
-import data from "@/data/portfolio.json";
+import DATA from "@/data/portfolio.json";
 
 const Skills = () => {
-  const skills = data.skills;
+  if (!DATA.skills.length) return null;
+
   return (
     <section
       className="section skills animate__animated animate__fadeIn animate__delay-5s"
@@ -9,7 +10,7 @@ const Skills = () => {
     >
       <h2 className="section__title">Skills</h2>
       <ul className="skills__list">
-        {skills.map((skill, index) => (
+        {DATA.skills.map((skill, index) => (
           <li key={index} className="skills__list-item btn btn--plain">
             {skill}
           </li>

@@ -1,3 +1,10 @@
+.projects__column {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .project {
   padding: 2rem;
   text-align: center;

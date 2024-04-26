@@ -1,8 +1,11 @@
-import ProjectCard from "./ProjectCard";
-import data from "@/data/portfolio.json";
+import "@/styles/project.scss";
+
+import ProjectCard from "@/components/ProjectCard";
+import DATA from "@/data/portfolio.json";
 
 const Projects = () => {
-  const projects = data.projects;
+  if (!DATA.projects.length) return null;
+
   return (
     <section
       className="section projects animate__animated animate__fadeIn animate__delay-5s"
@@ -10,7 +13,7 @@ const Projects = () => {
     >
       <h2 className="section__title">Projects</h2>
       <div className="projects__column">
-        {projects.map((project, index) => (
+        {DATA.projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
       </div>
