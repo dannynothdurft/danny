@@ -21,8 +21,8 @@ const About = () => {
       {(firstName || role) && (
         <div>
           {firstName && (
-            <h1
-              className={`about__greeting`}
+            <h2
+              className="about__greeting"
               style={{
                 opacity: animate ? 1 : 0,
                 transform: animate ? "translateY(0px)" : "translateY(+100px)",
@@ -32,11 +32,11 @@ const About = () => {
             >
               Hey, ich bin <span className="text--strong">{firstName}</span>.
               {greetingEmoji && <span> {greetingEmoji}</span>}
-            </h1>
+            </h2>
           )}
 
           {role && (
-            <h2
+            <h1
               className="about__role"
               style={{
                 opacity: animate ? 1 : 0,
@@ -53,7 +53,7 @@ const About = () => {
                 </span>
               )}
               .
-            </h2>
+            </h1>
           )}
         </div>
       )}
