@@ -15,17 +15,87 @@
   },
   "projects": [
     {
+      "thumbnail": "/images/grading-card-market.png",
+      "name": "Grading Card Market",
+      "description": [
+        "Grading Card Market wird ein Marktplatz, auf dem sich Nutzer anmelden können, um mit bewerteten Karten zu handeln. Dieses Projekt hat derzeit für mich oberste Priorität und wird voraussichtlich als Erstes abgeschlossen."
+      ],
+      "stack": [
+        "Next.js",
+        "SASS",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Redux",
+        "Nodemailer",
+        "PayPal",
+        "Stripe",
+        "Vercal"
+      ],
+      "sourceCode": "",
+      "livePreview": "https://grading-card-market.com/"
+    },
+    {
+      "thumbnail": "/images/car-supervision.png",
+      "name": "Car Supervision",
+      "description": [
+        "Car Supervision wird zu einem SaaS-Projekt, bei dem sich Nutzer anmelden können, um ihre Fahrzeuge zu verwalten. Bisher habe ich es nur in einer sehr einfachen Form für mich selbst genutzt. Die Umsetzung wird in Kürze beginnen."
+      ],
+      "stack": [
+        "Next.js",
+        "SASS",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Redux",
+        "Nodemailer",
+        "PayPal",
+        "Stripe",
+        "Netlify"
+      ],
+      "sourceCode": "https://github.com/dannynothdurft/car-control",
+      "livePreview": "https://carcontroldanny.netlify.app/"
+    },
+    {
+      "thumbnail": "/images/taskify.png",
+      "name": "Taskify",
+      "description": [
+        "Taskify ist ein Projekt, das ich von YouTube inspiriert habe (Entschuldigung dafür). Ähnlich wie Trello, wird dieses Projekt vollständig umgebaut und für Fullstack-Entwickler optimiert, sobald ich mit anderen Projekten fertig bin."
+      ],
+      "stack": [
+        "Next.js",
+        "SASS",
+        "Tailwind",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Redux",
+        "Nodemailer",
+        "Clerk",
+        "Stripe",
+        "Vercal"
+      ],
+      "sourceCode": "",
+      "livePreview": ""
+    },
+    {
       "thumbnail": "/images/em-collect.png",
       "name": "EM-Collectibles",
       "description": [
-        "Dieser Shop befindet sich derzeit noch im Aufbau."
+        "EM-Collectibles ist ein Demo-Shop für ein eigenes, programmiertes Shop-System. In diesem Projekt werden Front-End und Back-End miteinander verbunden und ist unter '/admin' erreichbar. Die Grundeinstellungen werden in der 'config.json' festgelegt. Das Projekt ist noch nicht abgeschlossen."
       ],
       "stack": [
         "Next.js",
         "SASS",
         "React",
+        "Node.js",
         "MongoDB",
-        "Redux"
+        "Redux",
+        "Nodemailer",
+        "PayPal",
+        "Vercal"
       ],
       "sourceCode": "https://github.com/dannynothdurft/em-collectibles",
       "livePreview": "https://em-collectibles.vercel.app"
@@ -34,11 +104,13 @@
       "thumbnail": "/images/SaNaSewing.png",
       "name": "SaNa Sewings Handmade",
       "description": [
-        "Diese Webseite habe ich für meine Frau geschrieben. Sie wollte eine Webseite, wo sie all ihre Schnittmuster ansehen und herunterladen kann. Unter den Vorgaben meiner Frau (Styling, Filter, Kategorien etc.) ist diese Webseite entstanden."
+        "SaNa Sewings ist eine Plattform für meine Frau, auf der sie alle ihre Schnittmuster mit Beispielbildern anzeigen kann. Dies bietet ihr einen Überblick über ihre gesamten Muster, ohne dass sie in ihren Ordnern nachsehen muss. Das Projekt ist derzeit abgeschlossen, wird aber bald auf Next.js umgeschrieben und mit einer richtigen Datenbank versehen."
       ],
       "stack": [
         "SASS",
-        "React"
+        "React",
+        "JSON",
+        "Netlify"
       ],
       "sourceCode": "",
       "livePreview": "https://sanasewing.netlify.app"
