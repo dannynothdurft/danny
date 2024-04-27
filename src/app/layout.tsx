@@ -1,6 +1,6 @@
 import "@/styles/globals.scss";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { LayoutProviders } from "@/providers/layout";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   description: "Danny Nothdurft - Fullstack Developer - Portfolio",
   robots: "index,follow",
   manifest: "/manifest.json",
-  viewport: "width=device-width, initial-scale=1.0",
   authors: [{ name: "Danny Nothdurft" }],
   creator: "Danny Nothdurft",
   publisher: "Danny Nothdurft",
@@ -28,6 +27,13 @@ export const metadata: Metadata = {
       url: "/favicons/logo-256.jpg",
     },
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

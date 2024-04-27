@@ -5,6 +5,7 @@ import DATA from "@/data/portfolio.json";
 
 import ThemeSwitch from "@/module/theme/ThemeSwitcher";
 
+import Logo from "@/svg/logo";
 import Close from "@/svg/close";
 import Menu from "@/svg/menu";
 
@@ -49,7 +50,12 @@ const Navbar = () => {
       <ul className={showNavList ? "nav__list open" : "nav__list"}>
         <li className="nav__list-item">
           <strong>
-            <a href="#top" onClick={hideNavListOverlay} className="link">
+            <a
+              href="#top"
+              onClick={hideNavListOverlay}
+              className="link nav__link__icon"
+            >
+              <Logo width="18px" height="18px" />
               {name || "About Me"}
             </a>
           </strong>
@@ -100,7 +106,6 @@ const Navbar = () => {
       >
         {showNavList ? <Close /> : <Menu />}
       </button>
-
       <ThemeSwitch />
     </nav>
   );

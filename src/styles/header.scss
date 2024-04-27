@@ -47,6 +47,17 @@ $da-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 
 .nav__list-item {
   margin: 0.5rem 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  
+  .nav__link__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 
 .nav__button {
