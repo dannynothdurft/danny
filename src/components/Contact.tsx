@@ -8,7 +8,7 @@ const Contact = () => {
       className="section contact center animate__animated animate__fadeIn animate__delay-5s"
       id="contact"
     >
-      <h2 className="section__title">Contact</h2>
+      <h2 className="section__title">Kontakt</h2>
       <a href={`mailto:${DATA.contact.email}`} target="_blank" rel="noreferrer">
         <button type="button" className="btn btn--outline">
           Email Me

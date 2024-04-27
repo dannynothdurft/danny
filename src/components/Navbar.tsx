@@ -62,7 +62,7 @@ const Navbar = () => {
               onClick={hideNavListOverlay}
               className="link link--nav"
             >
-              Projects
+              Projekte
             </a>
           </li>
         )}
@@ -86,7 +86,7 @@ const Navbar = () => {
               onClick={hideNavListOverlay}
               className="link link--nav"
             >
-              Contact
+              Kontakt
             </a>
           </li>
         )}

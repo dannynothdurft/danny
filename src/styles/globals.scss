@@ -221,6 +221,7 @@ button {
 }
 
 .btn--outline {
+  border-radius: 3px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -343,6 +344,7 @@ button {
 
 .skills__list-item {
   margin: 0.5rem;
+  border-radius: 8px;
 }
 
 .skills__list-item:hover {

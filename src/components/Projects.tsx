@@ -11,7 +11,7 @@ const Projects = () => {
       className="section projects animate__animated animate__fadeIn animate__delay-5s"
       id="projects"
     >
-      <h2 className="section__title">Projects</h2>
+      <h2 className="section__title">Projekte</h2>
       <div className="projects__column">
         {DATA.projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
