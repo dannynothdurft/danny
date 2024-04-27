@@ -1,5 +1,6 @@
 import "@/styles/about.scss";
 
+import React, { useState, useEffect } from "react";
 import Github from "@/svg/github";
 import Linkedin from "@/svg/linkedin";
 
@@ -8,25 +9,42 @@ import DATA from "@/data/portfolio.json";
 const About = () => {
   const { name, role, company, description, resume, social, greetingEmoji } =
     DATA.about;
+  const [animate, setAnimate] = useState(false);
   const firstName = name ? name.split(" ")[0] : null;
-  const fadeInAnimationClassName =
-    "animate__animated animate__fadeIn animate__delay-5s";
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
 
   return (
     <div className="about">
-      <div className="about__pseudo-padding about__pseudo-padding-top" />
-
       {(firstName || role) && (
         <div>
           {firstName && (
-            <h1 className="about__greeting animate__animated animate__fadeInUp animate__delay-1s">
+            <h1
+              className={`about__greeting`}
+              style={{
+                opacity: animate ? 1 : 0,
+                transform: animate ? "translateY(0px)" : "translateY(+100px)",
+                transition: "opacity 1s, transform 1s",
+                transitionDelay: animate ? "0.5s" : "0s",
+              }}
+            >
               Hey, ich bin <span className="text--strong">{firstName}</span>.
               {greetingEmoji && <span> {greetingEmoji}</span>}
             </h1>
           )}
 
           {role && (
-            <h1 className="about__role animate__animated animate__fadeInUp animate__delay-3s">
+            <h2
+              className="about__role"
+              style={{
+                opacity: animate ? 1 : 0,
+                transform: animate ? "translateY(0px)" : "translateY(+100px)",
+                transition: "opacity 1s, transform 1s",
+                transitionDelay: animate ? "2s" : "0s",
+              }}
+            >
               Ein {role}
               {company && (
                 <span>
@@ -35,28 +53,38 @@ const About = () => {
                 </span>
               )}
               .
-            </h1>
+            </h2>
           )}
         </div>
       )}
 
       {description && (
-        <div className={fadeInAnimationClassName}>
+        <div
+          style={{
+            opacity: animate ? 1 : 0,
+            transition: "opacity 1s, transform 1s",
+            transitionDelay: animate ? "3s" : "0s",
+          }}
+        >
           {description && (
             <div className="about__desc paragraph__list">
               {description.map((item, index) => (
                 <p key={index}>{item}</p>
               ))}
-              {/* fragments added to prevent react-hyphen error when description length < 2 */}
-              <></>
-              <></>
             </div>
           )}
         </div>
       )}
 
       {(resume || social) && (
-        <div className={`about__contact center ${fadeInAnimationClassName}`}>
+        <div
+          className={`about__contact center`}
+          style={{
+            opacity: animate ? 1 : 0,
+            transition: "opacity 1s, transform 1s",
+            transitionDelay: animate ? "3s" : "0s",
+          }}
+        >
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
               <button type="button" className="btn btn--outline">
@@ -94,8 +122,6 @@ const About = () => {
           )}
         </div>
       )}
-
-      <div className="about__pseudo-padding" />
     </div>
   );
 };

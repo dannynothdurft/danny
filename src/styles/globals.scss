@@ -38,7 +38,6 @@ $da-clr-fg-alt: #cdcdff;
 $da-clr-primary: #90a0d9;
 $da-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   
-  
   // Stildefinitionen für den Body basierend auf dem aktuellen Theme-Modus
   body.light {
     background-color: $li-clr-bg; // Hintergrundfarbe für den Hellmodus
@@ -61,17 +60,19 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  font-weight: 600;
   
   body.light & {
-    color: $da-clr-bg-alt
+    color: $li-clr-fg-alt;
   }
   
   body.dark & {
-    color: $li-clr-bg-alt;
+    color: $da-clr-fg-alt
   }
 }
 
-h1 {
+h1,
+.about__role {
   font-size: 2.6rem;
 }
 

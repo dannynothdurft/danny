@@ -12,13 +12,6 @@ $about-column-gap: 2.4rem;
     gap: $about-column-gap;
   }
   
-  .about__pseudo-padding {
-    flex: 1;
-  }
-  
-  .about__pseudo-padding-top {
-    min-height: calc(3rem - $about-column-gap);
-  }
   
   .about__desc {
     font-size: 1.2rem;

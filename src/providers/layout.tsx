@@ -1,6 +1,11 @@
 "use client";
-
-import React, { ReactNode, RefObject, useEffect, useRef } from "react";
+import React, {
+  ReactNode,
+  RefObject,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { ThemeProviders } from "@/providers/theme";
 
 import Header from "@/components/Header";
@@ -9,12 +14,28 @@ import ScrollToTop from "@/module/scroll/ScrollToTop";
 
 export function LayoutProviders({ children }: { children: ReactNode }) {
   const rootRef: RefObject<HTMLDivElement> = useRef(null);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     window.setTimeout(() => {
       rootRef.current?.style.removeProperty("pointer-events");
-    }, 5); //! Wenn die Animation drin ist dann af 5000 setzen
+      setAnimate(true);
+    }, 4000);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = (event: any) => {
+      if (!animate) {
+        event.preventDefault();
+      }
+    };
+
+    document.body.addEventListener("wheel", handleScroll, { passive: false });
+
+    return () => {
+      document.body.removeEventListener("wheel", handleScroll);
+    };
+  }, [animate]);
 
   return (
     <ThemeProviders>
@@ -26,7 +47,7 @@ export function LayoutProviders({ children }: { children: ReactNode }) {
       >
         <Header />
         {children}
-        <div className="animate__animated animate__fadeIn animate__delay-5s">
+        <div>
           <ScrollToTop />
         </div>
         <Footer />

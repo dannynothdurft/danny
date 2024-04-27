@@ -11,6 +11,11 @@ import Menu from "@/svg/menu";
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false);
   const { name } = DATA.about;
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
 
   const toggleNavListOverlay = () => {
     showNavList
@@ -33,7 +38,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="nav container animate__animated animate__fadeIn animate__delay-5s">
+    <nav
+      className="nav container"
+      style={{
+        opacity: animate ? 1 : 0,
+        transition: "opacity 1s, transform 1s",
+        transitionDelay: animate ? "3s" : "0s",
+      }}
+    >
       <ul className={showNavList ? "nav__list open" : "nav__list"}>
         <li className="nav__list-item">
           <strong>
