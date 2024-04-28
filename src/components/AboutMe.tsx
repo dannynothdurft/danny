@@ -99,7 +99,7 @@ const AboutMe = () => {
       <p className="text">
         Im Jahr 2024 starteten wir bei{" "}
         <a href="https://www.sugarshape.de">
-          <strong>SugarShape</strong>
+          <b>SugarShape</b>
         </a>{" "}
         mit dem Umzug unseres Oxid-Shops zu Shopify, was eine aufregende neue
         Phase in meiner Karriere als Entwickler darstellte.
@@ -107,7 +107,7 @@ const AboutMe = () => {
       <p className="text">
         Neben meiner Tätigkeit bei{" "}
         <a href="https://www.sugarshape.de">
-          <strong>SugarShape</strong>
+          <b>SugarShape</b>
         </a>{" "}
         investiere ich auch Zeit und Energie in private Projekte, mit denen ich
         mein Portfolio erweitern und mir langfristig ein zusätzliches Einkommen
@@ -128,7 +128,7 @@ const AboutMe = () => {
       <p className="text">
         Die Vielfalt meiner{" "}
         <a href="#projects">
-          <strong>Projekte</strong>
+          <b>Projekte</b>
         </a>{" "}
         spiegelt meine breite Interessenpalette wider und ermöglicht es mir,
         mich in verschiedenen Bereichen der Softwareentwicklung zu engagieren.
@@ -140,7 +140,7 @@ const AboutMe = () => {
       <p className="text">
         Durch meine{" "}
         <a href="#projects">
-          <strong>privaten Projekte</strong>
+          <b>privaten Projekte</b>
         </a>{" "}
         kann ich meine Kreativität und Innovationskraft voll entfalten und
         gleichzeitig mein unternehmerisches Denken schärfen. Mein Ziel ist es,
