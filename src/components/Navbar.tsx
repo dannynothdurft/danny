@@ -14,6 +14,8 @@ const Navbar = () => {
   const { name } = DATA.about;
   const [animate, setAnimate] = useState(false);
 
+  console.log(DATA.aboutMe);
+
   useEffect(() => {
     setAnimate(true);
   }, []);
@@ -81,6 +83,18 @@ const Navbar = () => {
               className="link link--nav"
             >
               Skills
+            </a>
+          </li>
+        )}
+
+        {DATA.aboutMe && (
+          <li className="nav__list-item">
+            <a
+              href="#aboutMe"
+              onClick={hideNavListOverlay}
+              className="link link--nav"
+            >
+              Über mich
             </a>
           </li>
         )}

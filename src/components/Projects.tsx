@@ -7,10 +7,7 @@ const Projects = () => {
   if (!DATA.projects.length) return null;
 
   return (
-    <section
-      className="section projects animate__animated animate__fadeIn animate__delay-5s"
-      id="projects"
-    >
+    <section className="section projects" id="projects">
       <h2 className="section__title">Projekte</h2>
       <div className="projects__column">
         {DATA.projects.map((project, index) => (

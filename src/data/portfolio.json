@@ -134,6 +134,9 @@
     "GitLab",
     "BitBucket"
   ],
+  "aboutMe": {
+    "titel": "Über mich"
+  },
   "contact": {
     "email": "kontakt@danny-nothdurft.de"
   }
