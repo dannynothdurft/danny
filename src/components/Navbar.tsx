@@ -14,8 +14,6 @@ const Navbar = () => {
   const { name } = DATA.about;
   const [animate, setAnimate] = useState(false);
 
-  console.log(DATA.aboutMe);
-
   useEffect(() => {
     setAnimate(true);
   }, []);

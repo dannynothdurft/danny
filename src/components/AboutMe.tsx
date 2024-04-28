@@ -39,15 +39,14 @@ const AboutMe = () => {
       </p>
       <p className="text">
         Im Jahr 2020 bot sich mir dann die aufregende Möglichkeit, bei{" "}
-        <b>Rafi</b>
-        einzusteigen und beim Aufbau eines neuen Unternehmens mitzuwirken. Diese
-        Erfahrung war für mich von unschätzbarem Wert, da ich die Gelegenheit
-        hatte, in verschiedene Bereiche einzutauchen und meine Fähigkeiten
-        weiterzuentwickeln. Zu meinen Aufgaben gehörte unter anderem der Aufbau
-        einer Webseite mithilfe des Baukastensystems von 1&1, die professionelle
-        Betreuung von Verkaufsplattformen, die erfolgreiche Durchführung von
-        Verhandlungen mit Dienstleistern sowie die Leitung und Koordination
-        eines Teams von fünf Mitarbeitern.
+        <b>Rafi</b> einzusteigen und beim Aufbau eines neuen Unternehmens
+        mitzuwirken. Diese Erfahrung war für mich von unschätzbarem Wert, da ich
+        die Gelegenheit hatte, in verschiedene Bereiche einzutauchen und meine
+        Fähigkeiten weiterzuentwickeln. Zu meinen Aufgaben gehörte unter anderem
+        der Aufbau einer Webseite mithilfe des Baukastensystems von 1&1, die
+        professionelle Betreuung von Verkaufsplattformen, die erfolgreiche
+        Durchführung von Verhandlungen mit Dienstleistern sowie die Leitung und
+        Koordination eines Teams von fünf Mitarbeitern.
       </p>
       <p className="text">
         Des Weiteren war ich maßgeblich an der Entwicklung eines Lagerkonzepts
@@ -57,13 +56,13 @@ const AboutMe = () => {
       </p>
       <p className="text">
         Im Jahr 2021 gründete ich <b>Moin Moin Möbelmonteur</b> und begann, eine
-        Vielzahl von Kunden zu betreuen. Alles lief gut, bis die
+        Vielzahl von Kunden zu betreuen. Alles lief gut, bis die{" "}
         <b>COVID-19-Pandemie</b> zuschlug und die wirtschaftliche Landschaft
         veränderte. Leider zwang mich die finanzielle Belastung der Pandemie
         dazu, Insolvenz anzumelden, da meine Ausgaben die Einnahmen überstiegen.
         Doch wie sagt man so schön, wenn sich eine Tür schließt, öffnet sich
         eine andere. In dieser schwierigen Zeit entschied ich mich, eine neue
-        berufliche Richtung einzuschlagen und absolvierte eine Umschulung bei
+        berufliche Richtung einzuschlagen und absolvierte eine Umschulung bei{" "}
         <b>DCI zum Web- und Softwareentwickler</b>.
       </p>
       <p className="text">
