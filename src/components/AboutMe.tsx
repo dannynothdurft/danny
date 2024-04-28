@@ -86,47 +86,68 @@ const AboutMe = () => {
         war.
       </p>
       <p className="text">
-        Im Jahr 2022 begann ich ein Praktikum bei <b>SugarShape</b>, einem
-        aufstrebenden Unternehmen, das als Unterwäsche-Label bekannt ist. Nach
-        meinem Praktikum boten sie mir eine Stelle als Junior Fullstack
-        Developer an. Seitdem arbeite ich an einer Vielzahl spannender
+        Im Jahr 2022 begann ich ein Praktikum bei{" "}
+        <a href="https://www.sugarshape.de">
+          <strong>SugarShape</strong>
+        </a>
+        , einem aufstrebenden Unternehmen, das als Unterwäsche-Label bekannt
+        ist. Nach meinem Praktikum boten sie mir eine Stelle als Junior
+        Fullstack Developer an. Seitdem arbeite ich an einer Vielzahl spannender
         Inhouse-Projekte. Meine Aufgaben umfassen die Umsetzung von
         React-Projekten sowie die Erstellung verschiedener Landingpages mit CMS
         für verschiedene Kampagnen und Events.
       </p>
       <p className="text">
-        Im Jahr 2024 starteten wir bei <b>SugarShape</b> mit dem Umzug unseres
-        Oxid-Shops zu Shopify, was eine aufregende neue Phase in meiner Karriere
-        als Entwickler darstellte.
+        Im Jahr 2024 starteten wir bei{" "}
+        <a href="https://www.sugarshape.de">
+          <strong>SugarShape</strong>
+        </a>{" "}
+        mit dem Umzug unseres Oxid-Shops zu Shopify, was eine aufregende neue
+        Phase in meiner Karriere als Entwickler darstellte.
       </p>
       <p className="text">
-        Neben meiner Tätigkeit bei <p>SugarShape</p> investiere ich auch Zeit
-        und Energie in private Projekte, mit denen ich mein Portfolio erweitern
-        und mir langfristig ein zusätzliches Einkommen erhoffe. Bislang habe ich
-        bereits vier vielversprechende Projekte in der Pipeline.
+        Neben meiner Tätigkeit bei{" "}
+        <a href="https://www.sugarshape.de">
+          <strong>SugarShape</strong>
+        </a>{" "}
+        investiere ich auch Zeit und Energie in private Projekte, mit denen ich
+        mein Portfolio erweitern und mir langfristig ein zusätzliches Einkommen
+        erhoffe. Bislang habe ich bereits vier vielversprechende Projekte in der
+        Pipeline.
       </p>
       <p className="text">
-        Diese <a href="#projects">privaten Projekte</a> bieten mir nicht nur die
-        Möglichkeit, mein Fachwissen und meine Fähigkeiten weiterzuentwickeln,
-        sondern auch, meine kreative Seite auszuleben und neue Technologien zu
-        erkunden. Jedes Projekt birgt seine eigenen Herausforderungen und
-        Chancen, und ich bin bestrebt, sie alle erfolgreich umzusetzen.
+        Diese{" "}
+        <a href="#projects">
+          <strong>privaten Projekte</strong>
+        </a>{" "}
+        bieten mir nicht nur die Möglichkeit, mein Fachwissen und meine
+        Fähigkeiten weiterzuentwickeln, sondern auch, meine kreative Seite
+        auszuleben und neue Technologien zu erkunden. Jedes Projekt birgt seine
+        eigenen Herausforderungen und Chancen, und ich bin bestrebt, sie alle
+        erfolgreich umzusetzen.
       </p>
       <p className="text">
-        Die Vielfalt meiner <a href="#projects">Projekte</a> spiegelt meine
-        breite Interessenpalette wider und ermöglicht es mir, mich in
-        verschiedenen Bereichen der Softwareentwicklung zu engagieren. Von der
-        Entwicklung innovativer Apps bis hin zur Gestaltung benutzerfreundlicher
-        Websites - ich bin stets bestrebt, meine Fähigkeiten zu erweitern und
-        neue Wege zu finden, um Mehrwert zu schaffen.
+        Die Vielfalt meiner{" "}
+        <a href="#projects">
+          <strong>Projekte</strong>
+        </a>{" "}
+        spiegelt meine breite Interessenpalette wider und ermöglicht es mir,
+        mich in verschiedenen Bereichen der Softwareentwicklung zu engagieren.
+        Von der Entwicklung innovativer Apps bis hin zur Gestaltung
+        benutzerfreundlicher Websites - ich bin stets bestrebt, meine
+        Fähigkeiten zu erweitern und neue Wege zu finden, um Mehrwert zu
+        schaffen.
       </p>
       <p className="text">
-        Durch meine <a href="#projects">privaten Projekte</a> kann ich meine
-        Kreativität und Innovationskraft voll entfalten und gleichzeitig mein
-        unternehmerisches Denken schärfen. Mein Ziel ist es, diese Projekte
-        langfristig erfolgreich zu etablieren und mein eigenes Unternehmen
-        aufzubauen, das auf meinen individuellen Fähigkeiten und Leidenschaften
-        basiert.
+        Durch meine{" "}
+        <a href="#projects">
+          <strong>privaten Projekte</strong>
+        </a>{" "}
+        kann ich meine Kreativität und Innovationskraft voll entfalten und
+        gleichzeitig mein unternehmerisches Denken schärfen. Mein Ziel ist es,
+        diese Projekte langfristig erfolgreich zu etablieren und mein eigenes
+        Unternehmen aufzubauen, das auf meinen individuellen Fähigkeiten und
+        Leidenschaften basiert.
       </p>
     </div>
   );
