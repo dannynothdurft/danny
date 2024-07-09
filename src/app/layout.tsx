@@ -48,6 +48,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <meta name="f0c354151b0bf52" content="ff8f688d205457b1f788338f9f6774d7" />
         <meta name="seobility" content="3288afe233a7dbeda71a9eec8ebc686b" />
         <meta
           name="google-site-verification"
