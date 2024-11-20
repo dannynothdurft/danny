@@ -359,7 +359,10 @@ button {
 .footer {
   padding: 2rem;
   margin-top: 3rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .footer__link {
