@@ -54,7 +54,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="dyaI2PWFtURcH73MfuqvG34JtVy48TjQjjkaYzbFzas"
         />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9015993706693550" crossorigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9015993706693550" crossOrigin="anonymous"></script>
       </head>
       <body>
         <LayoutProviders>{children}</LayoutProviders>
