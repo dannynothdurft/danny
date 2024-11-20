@@ -48,13 +48,24 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
-        <meta name="f0c354151b0bf52" content="ff8f688d205457b1f788338f9f6774d7" />
+        <meta
+          name="f0c354151b0bf52"
+          content="ff8f688d205457b1f788338f9f6774d7"
+        />
         <meta name="seobility" content="3288afe233a7dbeda71a9eec8ebc686b" />
         <meta
           name="google-site-verification"
           content="dyaI2PWFtURcH73MfuqvG34JtVy48TjQjjkaYzbFzas"
         />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9015993706693550" crossOrigin="anonymous"></script>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-9015993706693550"
+        ></meta>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9015993706693550"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body>
         <LayoutProviders>{children}</LayoutProviders>
