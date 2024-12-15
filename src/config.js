@@ -2,6 +2,14 @@ export const MainConfig = {
   title: "Danny Nothdurft",
   logo: "/logo.svg",
   logoAlt: "Logo - Danny Nothdurft",
+  company: "Danny Nothdurft",
+  ceo: "Danny Nothdurft",
+  addres: "Tribünenweg 32",
+  zip: "22111",
+  city: "Hamburg",
+  land: "Deutschland",
+  mobile: "+49(0) 176 566 121 13",
+  email: "kontakt@danny-nothdurft.de",
 };
 
 export const NavigationConfig = {
@@ -29,6 +37,11 @@ export const FooterConfig = {
   navigationLinks: [
     {
       id: "DN-FN01",
+      label: "Impressum",
+      href: "impressum",
+    },
+    {
+      id: "DN-FN02",
       label: "Datenschutz",
       href: "datenschutz",
     },
