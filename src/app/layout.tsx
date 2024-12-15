@@ -1,13 +1,14 @@
 import "@/styles/globals.scss";
 
 import type { Metadata, Viewport } from "next";
-import { LayoutProviders } from "@/providers/layout";
+import MainLayout from "@/layout/MainLayout";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Danny Nothdurft - Fullstack Developer",
-  description: "Danny Nothdurft - Fullstack Developer - Portfolio",
+  title: "Danny Nothdurft - Webseiten kauf",
+  description:
+    "Danny Nothdurft - Ich kaufe eure Webseiten, Webshops, Webprojekte und URL",
   robots: "index,follow",
   manifest: "/manifest.json",
   authors: [{ name: "Danny Nothdurft" }],
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   generator: "Danny Nothdurft",
   applicationName: "Danny Nothdurft",
   keywords: [
-    "Web-Investor, Danny Nothdurft, Webprojekte, Online-Erfolg, Webentwicklung, Webseitenoptimierung, Online-Geschäft, Unternehmenswachstum, Fullstack Developer",
+    "Danny Nothdurft, Web-Investor, Webseiten kauf, Webprojekte kaufen, Webshop ankauf",
   ],
   icons: {
     icon: "/favicons/favicon.ico",
@@ -68,7 +69,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body>
-        <LayoutProviders>{children}</LayoutProviders>
+        <MainLayout>{children}</MainLayout>
         <SpeedInsights />
         <Analytics />
       </body>

@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 
-const HomePage = () => {
+const KontaktPage = () => {
   return (
     <div className="PAGE--CONTAINER">
-      <h1>Startseite</h1>
+      <h1>Kontakt</h1>
     </div>
   );
 };
 
-export default HomePage;
+export default KontaktPage;
