@@ -37,3 +37,17 @@ $color-gray: #979BA9;
         0 10px 15px rgba(0, 0, 0, 0.1), 
         0 4px 6px rgba(0, 0, 0, 0.05);
 }
+
+// Cards
+
+@mixin Card {
+    padding: 15px;
+    background-color: $background-white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    @include FlexCenter;
+    flex-direction: column;
+    flex: 1;
+    @include BoxShadow;
+}

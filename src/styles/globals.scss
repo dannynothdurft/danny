@@ -11,6 +11,7 @@
 // Global Elements HTML5
 body {
     background-color: $background-gray;
+    padding: 0 20px;
 }
 
 main {
@@ -37,6 +38,26 @@ a {
     }
 }
 
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+hr {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid $color-gray;
+    @include BoxShadow
+}
+
 // Global Components
 .PAGE--CONTAINER {
     max-width: 1400px;
@@ -59,8 +80,51 @@ a {
     @include FlexCenter;
 }
 
-// Custum Elements
+.HOME--HEADER {
+    height: 400px;
+    background-image: url("/images/header_background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 
+    @include BoxShadow;
+
+    .HEADER--CONTENT {
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        border-radius: 8px;
+        @include FlexCenter;
+        flex-direction: column;
+    }
+}
+
+.FEATURES--CONTAINER {
+    margin-top: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .FEATURES {
+        @include FlexCenter;
+        align-items: stretch;
+        
+        .FEATURES--ITEM {
+            @include Card;
+        }
+    }
+}
+
+.HOMEPAGE--FIRST--CONTENT {
+    @include FlexCenter;
+
+    div{
+        flex: 1;
+    }
+}
+
+// Custum Elements
 .btn {
     background-color: $color-blue;
     padding: 10px 16px;
@@ -76,4 +140,11 @@ a {
     &:active {
         background-color: $color-blue-hover;
     }
+}
+
+.CONTENT--IMAGES {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    @include BoxShadow
 }
