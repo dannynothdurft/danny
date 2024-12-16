@@ -1,7 +1,11 @@
 "use client";
 import React, { useState } from "react";
+import axios from "axios";
 
 const KontaktPage = () => {
+  const currentUrl =
+    typeof window !== "undefined" ? window.location.origin : "";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,10 +18,30 @@ const KontaktPage = () => {
     askingPrice: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+
+    try {
+      const response = await axios.post(
+        `${currentUrl}/api/pushMails/pushContactForm`,
+        formData
+      );
+      if (response.status === 200) {
+        // setFormData({
+        //   name: "",
+        //   email: "",
+        //   projectUrl: "",
+        //   description: "",
+        //   monthlyRevenue: "",
+        //   monthlyProfit: "",
+        //   monthlyVisitors: "",
+        //   technicalDetails: "",
+        //   askingPrice: "",
+        // });
+      }
+    } catch (error) {
+      console.error("Leider ist ein Fehler aufgetretten");
+    }
   };
 
   const handleChange = (
@@ -171,7 +195,6 @@ const KontaktPage = () => {
               type="submit"
               className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg flex items-center justify-center space-x-2 hover:bg-blue-700 transition-colors"
             >
-              {/* <Send className="h-5 w-5" /> */}
               <span>Angebot erhalten</span>
             </button>
           </form>
