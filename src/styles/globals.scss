@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "./__Variables.scss";
 
 // Reset
@@ -17,15 +20,6 @@ body {
 main {
     margin: 0 auto;
     min-height: calc(100vh - 95px);
-}
-
-footer {
-    max-width: 1400px;
-    height: 25px;
-    margin: 0 auto;
-    @include FlexCenterSpaceBetween;
-    font-size: 0.9rem;
-    color: $color-gray;
 }
 
 a {

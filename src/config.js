@@ -33,7 +33,7 @@ export const NavigationConfig = {
 };
 
 export const FooterConfig = {
-  fromYear: "&copy; 2023 -",
+  fromYear: "© 2023 -",
   navigationLinks: [
     {
       id: "DN-FN01",

@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
+import Link from "next/link";
 import { EuroIcon, HandShakeIcon, SecurityIcon, WebIcon } from "@/utils/svg";
 
 const HomePage = () => {
@@ -9,34 +10,37 @@ const HomePage = () => {
     <div className="PAGE--CONTAINER">
       <Header />
       <section className="FEATURES--CONTAINER">
-        <h2>Warum mich wählen?</h2>
+        <h2>Warum an mich verkaufen?</h2>
         <div className="FEATURES">
           <div className="FEATURES--ITEM">
             <HandShakeIcon width="50" height="50" />
-            <h3>Schneller Prozess</h3>
-            <p>Ich kümmern mich um alles – schnell und unkompliziert.</p>
+            <h3>Faire Bewertung</h3>
+            <p>
+              Erzielen den besten Marktpreis für Dein digitalen Vermögenswert
+              auf der Grundlage von Umsatz und Potenzial
+            </p>
           </div>
           <div className="FEATURES--ITEM">
             <EuroIcon width="50" height="50" />
-            <h3>Faire Preise</h3>
+            <h3>Schnelles Verfahren</h3>
             <p>
-              Sie erhalten ein transparentes und faires Angebot für Ihr Projekt.
+              Schließen den Verkauf in nur maximal 2 Tagen mit unserem
+              optimierten Verfahren ab
             </p>
           </div>
           <div className="FEATURES--ITEM">
             <SecurityIcon width="50" height="50" />
-            <h3>Sicherer Verkauf</h3>
+            <h3>Sichere Transaktion</h3>
             <p>
-              Der Verkaufsprozess ist sicher und geschützt – für Ihre
-              Sicherheit.
+              Sicherer und geschützter Zahlungsvorgang mit legaler Dokumentation
             </p>
           </div>
           <div className="FEATURES--ITEM">
             <WebIcon width="50" height="50" />
-            <h3>Vielseitige Projekte</h3>
+            <h3>Wachstumspotenzial</h3>
             <p>
-              Ich kaufen alle Arten von Webseiten, Webshops und Social
-              Media-Projekten.
+              Wir suchen nach Projekten mit Potenzial, auch wenn die derzeitigen
+              Einnahmen bescheiden sind
             </p>
           </div>
         </div>
@@ -79,6 +83,24 @@ const HomePage = () => {
             alt="Webseitenkauf"
             className="CONTENT--IMAGES"
           />
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Sind Sie bereit, Ihr Projekt zu verkaufen?
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Fordern Sie noch heute eine kostenlose Bewertung und Beratung an.
+          </p>
+          <Link
+            href="/kontakt"
+            className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            Beginnen Sie den Prozess
+          </Link>
         </div>
       </section>
     </div>
