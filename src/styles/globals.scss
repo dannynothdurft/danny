@@ -1,386 +1,144 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./__Variables.scss";
 
-:root {
-  scroll-behavior: smooth;
-}
-
-$header-height: 5rem;
-
+// Reset
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  box-shadow: none;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-// Definition der Farben für den Hellmodus
-$li-clr-bg: #fcfcfc;
-$li-clr-bg-alt: #fff;
-$li-clr-fg: #555;
-$li-clr-fg-alt: #444;
-$li-clr-primary: #2978b5;
-$li-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
-  
-  // Definition der Farben für den Dunkelmodus
-$da-clr-bg: #23283e;
-$da-clr-bg-alt: #2a2f4c;
-$da-clr-fg: #bdbddd;
-$da-clr-fg-alt: #cdcdff;
-$da-clr-primary: #90a0d9;
-$da-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  
-  // Stildefinitionen für den Body basierend auf dem aktuellen Theme-Modus
-  body.light {
-    background-color: $li-clr-bg; // Hintergrundfarbe für den Hellmodus
-    color: $li-clr-fg; // Textfarbe für den Hellmodus
-  }
-  
-  body.dark {
-    background-color: $da-clr-bg; // Hintergrundfarbe für den Dunkelmodus
-    color: $da-clr-fg; // Textfarbe für den Dunkelmodus
-  }
-
-
-.disable-scroll {
-  overflow-y: hidden;
-  touch-action: none;
+// Global Elements HTML5
+body {
+    background-color: $background-gray;
+    padding: 0 20px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.4;
-  font-weight: 600;
-  
-  body.light & {
-    color: $li-clr-fg-alt;
-  }
-  
-  body.dark & {
-    color: $da-clr-fg-alt
-  }
-}
-
-h1,
-.about__greeting {
-  font-size: 2.6rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.3rem;
-}
-
-ul {
-  list-style-type: none;
+main {
+    margin: 0 auto;
+    min-height: calc(100vh - 95px);
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-blue;
+    }
 }
 
-p.text {
-  margin-bottom: 10px;
+h1 {
+    margin-bottom: 1rem;
 }
 
-button {
-  cursor: pointer;
+h2 {
+    margin-bottom: 1rem;
 }
 
-@media (min-width: 900px) {
-  h1 {
-    font-size: 3rem;
-  }
+p {
+    line-height: 1.2rem;
+    padding-bottom: 1rem;
 }
 
-.app {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
+hr {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid $color-gray;
+    @include BoxShadow
 }
 
-.container {
-  max-width: 700px;
-  width: 90%;
-  margin: 0 auto;
+// Global Components
+.PAGE--CONTAINER {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.center {
-  display: flex;
-  align-items: center;
+.NAVIGATION--CONTAINER {
+    max-width: 1400px;
+    height: 50px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: $background-white;
+    border-radius: 8px;
+
+    @include FlexCenterSpaceBetween;
+    @include BoxShadow;
 }
 
-.section {
-  padding-top:  calc($header-height + 3rem);
+.NAVIGATION--LINKS--CONTAINER {
+    @include FlexCenter;
 }
 
-.section__title {
-  text-align: center;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+.HOME--HEADER {
+    height: 400px;
+    background-image: url("/images/header_background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+
+    @include BoxShadow;
+
+    .HEADER--CONTENT {
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        border-radius: 8px;
+        @include FlexCenter;
+        flex-direction: column;
+    }
 }
 
-.paragraph__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.FEATURES--CONTAINER {
+    margin-top: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .FEATURES {
+        @include FlexCenter;
+        align-items: stretch;
+        
+        .FEATURES--ITEM {
+            @include Card;
+        }
+    }
 }
 
-.link {
-  padding: 0.3rem 0;
-  position: relative;
+.HOMEPAGE--FIRST--CONTENT {
+    @include FlexCenter;
 
-  body.light & {
-    color: $li-clr-primary
-  }
-  
-  body.dark & {
-    color: $da-clr-primary
-  }
+    div{
+        flex: 1;
+    }
 }
 
-.link:hover {
-  body.light & {
-    color: $li-clr-primary
-  }
-  
-  body.dark & {
-    color: $da-clr-primary
-  }
-}
-
-.link::before {
-  content: '';
-  display: inline;
-  width: 0%;
-  height: 0.2rem;
-  position: absolute;
-  bottom: 0;
-  transition: width 0.2s ease-in;
-
-  body.light & {
-    background-color: $li-clr-primary
-  }
-  
-  body.dark & {
-    background-color: $da-clr-primary
-  }
-}
-
-.link:hover::before,
-.link:focus::before {
-  width: 100%;
-}
-
-.link--nav {
-  /* text-transform: lowercase; */
-  font-weight: 500;
-  body.light & {
-    color: $li-clr-fg
-  }
-  
-  body.dark & {
-    color: $da-clr-fg
-  }
-}
-
-.link--icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  body.light & {
-    color: $li-clr-fg
-  }
-  
-  body.dark & {
-    color: $da-clr-fg
-  }
-}
-
+// Custum Elements
 .btn {
-  display: block;
-  cursor: pointer;
-  padding: 0.8rem 1.4rem;
-  font-weight: 500;
-  font-size: 0.9rem;
-  /* text-transform: lowercase; */
-  transition: transform 0.2s ease-in-out;
+    background-color: $color-blue;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-white;
+        @include BoxShadow;
+    }
+
+    &:active {
+        background-color: $color-blue-hover;
+    }
 }
 
-.btn--outline {
-  border-radius: 3px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  
-  body.light & {
-    color: $li-clr-primary;
-    border: 2px solid $li-clr-primary;
-  }
-  
-  body.dark & {
-    color: $da-clr-primary;
-    border: 2px solid $da-clr-primary;
-  }
-}
-
-.btn--outline:hover,
-.btn--outline:focus {
-  body.light & {
-    color: $li-clr-bg
-  }
-  
-  body.dark & {
-    color: $da-clr-bg
-  }
-}
-
-.btn--outline:before {
-  content: '';
-  position: absolute;
-  right: 100%;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: right 0.2s ease-in-out;
-
-  body.light & {
-    background-color: $li-clr-primary
-  }
-  
-  body.dark & {
-    background-color: $da-clr-primary
-  }
-}
-
-.btn--outline:hover:before,
-.btn--outline:focus:before {
-  right: 0;
-}
-
-.btn--plain {
-  text-transform: initial;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  border: 0;
-  body.light & {
-    background-color: $li-clr-bg-alt
-  }
-  
-  body.dark & {
-    background-color: $da-clr-bg-alt
-  }
-}
-
-.btn--plain:hover {
-  transform: translateY(-4px);
-}
-
-.btn--icon {
-  padding: 0;
-}
-
-.btn--icon:hover,
-.btn--icon:focus {
-  body.light & {
-    color: $li-clr-primary
-  }
-  
-  body.dark & {
-    color: $da-clr-primary
-  }
-}
-
-.btn--icon:active {
-  transform: translateY(-5px);
-}
-
-.text--strong {
-  body.light & {
-    color: $li-clr-primary
-  }
-  
-  body.dark & {
-    color: $da-clr-primary
-  }
-}
-
-.contact {
-  flex-direction: column;
-}
-
-.scroll-top {
-  display: none;
-}
-
-@media (min-width: 915px) {
-  .scroll-top {
-    background-color: transparent;
-    display: unset;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-  }
-}
-
-.skills__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skills__list-item {
-  margin: 0.5rem;
-  border-radius: 8px;
-}
-
-.skills__list-item:hover {
-  cursor: auto;
-}
-
-
-.footer {
-  padding: 2rem;
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.footer__link {
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  body.light & {
-    color: $li-clr-fg
-  }
-  
-  body.dark & {
-    color: $da-clr-fg
-  }
-}
-
-@media (min-width: 600px) {
-  .footer {
-    padding: 3rem 0;
-    margin-top: 4rem;
-  }
+.CONTENT--IMAGES {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    @include BoxShadow
 }

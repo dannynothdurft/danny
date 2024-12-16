@@ -1,0 +1,53 @@
+// Colors
+$background-gray: #e2e8f0;
+$background-white: #f8f9fc;
+
+$color-blue: #008FFF;
+$color-blue-hover: #010A5C;
+$color-white: #ffffff;
+$color-black: #000A21;
+$color-gray: #979BA9;
+
+// Layouts
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@mixin FlexCenterSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+// Shadows
+@mixin BoxShadow {
+    -webkit-box-shadow:
+        0 10px 15px rgba(0, 0, 0, 0.1), 
+        0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    -moz-box-shadow:
+        0 10px 15px rgba(0, 0, 0, 0.1), 
+        0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    box-shadow:
+        0 10px 15px rgba(0, 0, 0, 0.1), 
+        0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+// Cards
+
+@mixin Card {
+    padding: 15px;
+    background-color: $background-white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    @include FlexCenter;
+    flex-direction: column;
+    flex: 1;
+    @include BoxShadow;
+}
