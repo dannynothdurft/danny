@@ -27,17 +27,17 @@ const KontaktPage = () => {
         formData
       );
       if (response.status === 200) {
-        // setFormData({
-        //   name: "",
-        //   email: "",
-        //   projectUrl: "",
-        //   description: "",
-        //   monthlyRevenue: "",
-        //   monthlyProfit: "",
-        //   monthlyVisitors: "",
-        //   technicalDetails: "",
-        //   askingPrice: "",
-        // });
+        setFormData({
+          name: "",
+          email: "",
+          projectUrl: "",
+          description: "",
+          monthlyRevenue: "",
+          monthlyProfit: "",
+          monthlyVisitors: "",
+          technicalDetails: "",
+          askingPrice: "",
+        });
       }
     } catch (error) {
       console.error("Leider ist ein Fehler aufgetretten");
