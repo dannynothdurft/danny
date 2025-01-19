@@ -45,14 +45,14 @@ const About = () => {
                 transitionDelay: animate ? "2s" : "0s",
               }}
             >
-              Ein {role}
+              Ich arbeite zurzeit bei{" "}
               {company && (
                 <span>
                   {" "}
                   von <span className="text--strong">{company}</span>
                 </span>
-              )}
-              .
+              )}{" "}
+              als {role}.
             </h1>
           )}
         </div>
@@ -88,7 +88,7 @@ const About = () => {
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
               <button type="button" className="btn btn--outline">
-                Resume
+                CV
               </button>
             </a>
           )}

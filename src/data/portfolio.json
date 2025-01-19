@@ -2,12 +2,12 @@
   "about": {
     "name": "Danny Nothdurft",
     "greetingEmoji": "👋",
-    "role": "Fullstack Developer",
-    "company": "SugarShape",
+    "role": "Entwickler",
+    "company": "CuraSoft",
     "description": [
-      "Als Fullstack Developer bei SugarShape arbeite ich an verschiedenen spannenden Projekten. Derzeit migrieren wir unseren Oxid-Shop zu Shopify, was eine Vielzahl von Herausforderungen mit sich bringt. Dabei wachsen wir stetig. Ein wichtiger Bestandteil ist das Erlernen der hauseigenen Shopify-Sprache Liquid."
+      "Bei CuraSoft hatte ich die Möglichkeit, an einem herausfordernden und spannenden Projekt mitzuwirken: dem Upgrade von CuraMap von Vue 2 auf Vue 3. Im Rahmen dieses Projekts habe ich zudem das komplette Redesign der Anwendung umgesetzt, wodurch sowohl die Benutzerfreundlichkeit als auch die technische Performance maßgeblich verbessert wurden."
     ],
-    "resume": "https://grading-card-market.com/",
+    "resume": "/assets/CV-Danny-Nothdurft.pdf",
     "social": {
       "github": "https://github.com/dannynothdurft",
       "linkedin": "https://www.linkedin.com/in/danny-nothdurft"
